@@ -1,0 +1,39 @@
+#bookmark {
+  position: absolute;
+  z-index: 100000;
+  background-color: $grayDark;
+  margin: auto;
+  padding: 20px;
+  left: 40%;
+  margin-left: 160px;
+  top: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#menu .wrapper h1 {
+  color: white;
+}
+
+#menu .wrapper h4 {
+  color: $red;
+}
+
+#menu .wrapper li a  {
+  color: $grayLight;
+}
+
+#menu .wrapper li a:hover  {
+  color: $red;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 30px;
+  height: 700px;
+  background-color: $deep-red;
+}
+
+.main-message {
+  height: 300px;
+}
