@@ -4,21 +4,50 @@
 
 
 .hero-unit {
-  padding: 60px;
-  margin-bottom: 30px;
-  background-color: $heroUnitBackground;
+  padding: 150px 60px 60px 60px;
+  margin-bottom: 10px;
+  
+  background: 
+    image-url("mannequin1.png") 200px 10px no-repeat,  
+    $heroUnitBackground 0 0 repeat;
+  background-position: 37px -100px, top center;
+  background-size: 710px, cover;
+  height: 750px;
   @include border-radius(6px);
   h1 {
     margin-bottom: 0;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1;
     color: $heroUnitHeadingColor;
     letter-spacing: -1px;
+    font-family: "ff-cocon-web-pro";
+  }
+  h3 {
+   font-family: "ff-cocon-web-pro";
+   font-style: italic;
+   font-size: 25px;
+   line-height: 20px;
+  }
+  h4 {
+   color: $white;
   }
   p {
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: $baseLineHeight * 1.25;
+    color: $black;
+  }
+  span.accent-white {
+    color: white;
+    font-family: "bello-pro";
+    font-size: 20px;
     line-height: $baseLineHeight * 1.5;
-    color: $heroUnitLeadColor;
   }
 }
+ 
+.hero-unit .red-bkgrnd {
+    background-color: $deep-red;
+    @include border-radius(15px);
+    padding: 20px;
+}
+

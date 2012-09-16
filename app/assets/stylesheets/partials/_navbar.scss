@@ -32,6 +32,19 @@
   @include clearfix();
 }
 
+//.navbar-inner-dark {
+//  min-height: $navbarHeight;
+//  padding-left:  20px;
+//  padding-right: 20px;
+//  @include gradient-vertical($navbarInverseBackground);
+//  border: 1px solid $navbarBorder;
+//  @include border-radius(0px);
+//  @include box-shadow(0 1px 4px rgba(0,0,0,.065));
+//
+//  // Prevent floats from breaking the navbar
+//  @include clearfix();
+//}
+
 // Set width to auto for default container
 // We then reset it for fixed navbars in the #gridSystem mixin
 .navbar .container {
@@ -384,7 +397,9 @@
 
 .navbar-inverse {
   color: $navbarInverseText;
-
+  background-color: $grayDark;
+  padding-bottom: 150px;
+  
   .navbar-inner {
     @include gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
     border-color: $navbarInverseBorder;

@@ -36,11 +36,43 @@ $purple:                #7a43b6 !default;
 $bodyBackground:        $white !default;
 $textColor:             $grayDark !default;
 
+// Opacity
+// -------------------------
+#opacity-10 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+  opacity: 0.1;
+}
+ 
+#opacity-20 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+ 
+#opacity-50 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
+#opacity-70 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.70;
+}
+
+#opacity-75 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+}
+
+#opacity-80 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
 
 // Links
 // -------------------------
-$linkColor:             #08c !default;
-$linkColorHover:        darken($linkColor, 15%) !default;
+$linkColor:             $red !default;
+$linkColorHover:        lighten($linkColor, 15%) !default;
+                        
 
 
 // Typography
@@ -131,8 +163,8 @@ $zindexModal:             1050 !default;
 
 // Sprite icons path
 // -------------------------
-$iconSpritePath:          "../img/glyphicons-halflings.png" !default;
-$iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png" !default;
+$iconSpritePath:          "glyphicons-halflings.png" !default;
+$iconWhiteSpritePath:     "glyphicons-halflings-white.png" !default;
 
 
 // Input placeholder text color
@@ -202,7 +234,8 @@ $paginationActiveBackground:          #f5f5f5 !default;
 
 // Hero unit
 // -------------------------
-$heroUnitBackground:              $grayLighter !default;
+//$heroUnitBackground:              $deep-red !default; 
+$heroUnitBackground:              url("shattered.png") !default;
 $heroUnitHeadingColor:            inherit !default;
 $heroUnitLeadColor:               inherit !default;
 

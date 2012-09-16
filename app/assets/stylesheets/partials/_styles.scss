@@ -4,17 +4,21 @@
   background-color: $grayDark;
   margin: auto;
   padding: 20px;
-  left: 40%;
-  margin-left: 160px;
+  left: 45%;
+  margin-left: 150px;
   top: 0px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  width: 220px;
 }
 
-#menu .wrapper h1 {
+#menu .wrapper h2 {
   color: white;
 }
 
+#menu .wrapper h3 {
+  color: $white;
+}
 #menu .wrapper h4 {
   color: $red;
 }
@@ -28,12 +32,50 @@
   text-decoration: none;
 }
 
-.hero {
-  padding: 30px;
-  height: 700px;
-  background-color: $deep-red;
+.main-message {
+  height: 160px;
+  margin: 0 200px 0px 0;
 }
 
-.main-message {
-  height: 300px;
+#canvas { 
+  position: absolute;
+  z-index: 100000;
+  margin: auto;
+  left: 45%;
+  margin-left: 150px;
+  top: 530px;
+  width: 220px; 
+}
+
+#twitter {
+  background-image: url("jewels.png");
+  background-size: 84px;
+  float: left;
+  width: 63px;
+  height: 50px;
+  margin-right: -20px;
+  padding: 17px 3px 2px 26px;
+  position: relative;
+}
+
+#github {
+  background-image: url("jewels.png");
+  background-size: 84px;
+  float: left;
+  width: 63px;
+  height: 50px;
+  margin-right: -20px;
+  padding: 17px 3px 2px 27px;
+  position: relative;
+}
+
+#linkedin {
+  background-image: url("jewels.png");
+  background-size: 84px;
+  float: left;
+  width: 63px;
+  height: 50px;
+  margin-right: -20px;
+  padding: 18px 3px 2px 26px;
+  position: relative;
 }
