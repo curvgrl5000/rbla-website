@@ -11,7 +11,7 @@
 // -------------------------
 $black:                 #000 !default;
 $grayDarker:            #222 !default;
-$grayDark:              #333 !default;
+$grayDark:              #302828 !default;
 $gray:                  #555 !default;
 $grayLight:             #999 !default;
 $grayLighter:           #eee !default;
@@ -66,6 +66,11 @@ $textColor:             $grayDark !default;
 #opacity-80 {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
+}
+
+#opacity-90 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
 }
 
 // Links
