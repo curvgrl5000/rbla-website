@@ -4,13 +4,13 @@
 
 
 .hero-unit {
-  padding: 150px 60px 60px 60px;
+  padding: 100px 60px 60px 50px;
   margin-bottom: 10px;
   
   background: 
     image-url("mannequin1.png") 200px 10px no-repeat,  
     $heroUnitBackground 0 0 repeat;
-  background-position: 37px -100px, top center;
+  background-position: -22px -124px, top center;
   background-size: 710px, cover;
   height: 750px;
   @include border-radius(6px);
@@ -34,7 +34,7 @@
   p {
     font-size: 15px;
     font-weight: 500;
-    line-height: $baseLineHeight * 1.25;
+    line-height: $baseLineHeight * 1.00;
     color: $black;
   }
   span.accent-white {
@@ -48,6 +48,6 @@
 .hero-unit .red-bkgrnd {
     background-color: $deep-red;
     @include border-radius(15px);
-    padding: 20px;
+    padding: 10px 20px;
 }
 

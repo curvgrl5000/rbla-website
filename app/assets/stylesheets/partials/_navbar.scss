@@ -398,7 +398,7 @@
 .navbar-inverse {
   color: $navbarInverseText;
   background-color: $grayDark;
-  padding-bottom: 150px;
+  padding-bottom: 20px;
   
   .navbar-inner {
     @include gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
