@@ -4,7 +4,7 @@
   background-color: $grayDark;
   margin: auto;
   padding: 20px;
-  left: 45%;
+  left: 40%;
   margin-left: 150px;
   top: 0px;
   border-bottom-left-radius: 15px;
@@ -39,17 +39,17 @@
 }
 
 .main-message {
-  height: 160px;
-  margin: 0 200px 0px 0;
+  height: 130px;
+  margin: 35px 200px 0px 0;
 }
 
 #canvas { 
   position: absolute;
   z-index: 100000;
   margin: auto;
-  left: 45%;
+  left: 40%;
   margin-left: 150px;
-  top: 530px;
+  top: 515px;
   width: 220px; 
 }
 

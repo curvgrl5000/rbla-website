@@ -4,20 +4,21 @@
 
 
 .hero-unit {
-  padding: 100px 60px 60px 50px;
+  padding: 30px 60px 60px 50px;
   margin-bottom: 10px;
   
   background: 
     //image-url("mannequin1.png") 200px 10px no-repeat,  
     $heroUnitBackground 0 0 repeat;
-  background-position: -22px -124px, top center;
-  background-size: 710px, cover;
-  height: 750px;
+  background-position: top center;
+  background-size: 720px;
+  height: 720px;
   @include border-radius(6px);
   h1 {
     margin-bottom: 0;
-    font-size: 50px;
-    line-height: 1;
+    padding-left: 15px;
+    font-size: 33px;
+    line-height: 1.125;
     color: $heroUnitHeadingColor;
     letter-spacing: -1px;
     font-family: "ff-cocon-web-pro";
@@ -34,7 +35,7 @@
   p {
     font-size: 15px;
     font-weight: 500;
-    line-height: $baseLineHeight * 1.00;
+    line-height: $baseLineHeight * .9;
     color: $black;
   }
   span.accent-white {
