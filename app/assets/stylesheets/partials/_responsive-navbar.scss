@@ -23,6 +23,8 @@
   }
   .navbar-fixed-bottom {
     margin-top: $baseLineHeight;
+    background-color: $grayDark;
+    padding-bottom: 300px;
   }
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
@@ -30,7 +32,7 @@
   }
   .navbar .container {
     width: auto;
-    padding: 0;
+    padding: 0 20px;
   }
   // Account for brand name
   .navbar .brand {

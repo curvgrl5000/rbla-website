@@ -1,11 +1,10 @@
 Wondergem::Application.routes.draw do
 
 
-  get "static_pages/cheat"
+  match '/cheat', to:  "static_pages#cheat"
 
   get "static_pages/help"
 
-  get "cheatsheet/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

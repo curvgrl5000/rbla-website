@@ -46,7 +46,7 @@
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: 160px;
-  padding: 5px 0;
+  padding: 5px 10px;
   margin: 2px 0 0; // override default ul
   list-style: none;
   background-color: $dropdownBackground;
@@ -74,7 +74,7 @@
   // Links within the dropdown menu
   a {
     display: block;
-    padding: 3px 20px;
+    padding: 3px 6px 3px 4px;
     clear: both;
     font-weight: normal;
     line-height: $baseLineHeight;
@@ -88,9 +88,11 @@
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
+  padding: 3px 4px;
   text-decoration: none;
   color: $dropdownLinkColorHover;
   background-color: $dropdownLinkBackgroundHover;
+  border-radius: 4px;
   @include gradient-vertical($dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
 }
 

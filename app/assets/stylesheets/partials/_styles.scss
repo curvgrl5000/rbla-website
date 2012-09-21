@@ -5,7 +5,7 @@
   margin: auto;
   padding: 20px;
   left: 40%;
-  margin-left: 150px;
+  margin-left: 15%;
   top: 0px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -40,48 +40,112 @@
 
 .main-message {
   height: 130px;
-  margin: 35px 200px 0px 0;
+  margin: 25px 200px 0px 0;
+}
+
+.cheat-sheets {
+  padding: 30px;
+  margin: 30px 0px;
+  background: 
+    $heroUnitBackground 0 0 repeat;
+  background-position: top center;
+  background-size: 720px;
+  height: 720px;
+  @include border-radius(6px);
+  h1 {
+    margin-bottom: 0;
+    padding-left: 15px;
+    font-size: 33px;
+    line-height: 1.125;
+    color: $heroUnitHeadingColor;
+    letter-spacing: -1px;
+    font-family: "ff-cocon-web-pro";
+  }
+  h2 {
+   font-family: "ff-cocon-web-pro";
+   font-style: italic;
+   font-size: 27px;
+   line-height: 20px;
+  }
+  h4 {
+   color: $white;
+  }
+  h5 {
+    color: $white;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: $baseLineHeight * .8;
+    color: $grayDark;
+    margin: 0 15px 10px 0px;
+  }
+  span.accent-white {
+    color: white;
+    font-family: "bello-pro";
+    font-size: 20px;
+    line-height: $baseLineHeight * 1.5;
+  }
+  .red-bkgrnd {
+      background-color: $deep-red;
+      @include border-radius(15px);
+      padding: 10px 20px 30px 20px;
+      margin: 0px;
+   }
 }
 
 #canvas { 
   position: absolute;
   z-index: 100000;
   margin: auto;
-  left: 40%;
-  margin-left: 150px;
-  top: 515px;
+  left: 55%;
+  top: 500px;
   width: 220px; 
 }
 
+// Get rid of the #canvas once we update the page
+.canvas { 
+  position: relative;
+  margin: 0;
+  top: 15px;
+  width: 220px; 
+}    
+
 #twitter {
   background-image: url("jewels.png");
-  background-size: 84px;
+  background-size: 67px;
   float: left;
-  width: 63px;
-  height: 50px;
-  margin-right: -20px;
-  padding: 17px 3px 2px 26px;
+  width: 50px;
+  height: 45px;
+  margin-right: -10px;
+  padding: 12px 3px 2px 17px;
   position: relative;
 }
 
 #github {
   background-image: url("jewels.png");
-  background-size: 84px;
+  background-size: 67px;
   float: left;
-  width: 63px;
-  height: 50px;
+  width: 50px;
+  height: 45px;
   margin-right: -20px;
-  padding: 17px 3px 2px 27px;
+  padding: 12px 3px 2px 17px;
   position: relative;
 }
 
 #linkedin {
   background-image: url("jewels.png");
-  background-size: 84px;
+  background-size: 67px;
   float: left;
-  width: 63px;
-  height: 50px;
-  margin-right: -20px;
-  padding: 18px 3px 2px 26px;
+  width: 50px;
+  height: 45px;
+  margin-left: 10px;
+  padding: 12px 3px 2px 17px;
   position: relative;
+}
+
+.git-map{
+  background-color: white;
+  height: 600px;
+  margin-right: 25px;
 }
