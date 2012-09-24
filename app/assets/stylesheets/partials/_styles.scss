@@ -124,7 +124,7 @@
   width: 50px;
   height: 45px;
   margin-right: -10px;
-  padding: 12px 3px 2px 17px;
+  padding: 12px 3px 2px 18px;
   position: relative;
 }
 
@@ -135,7 +135,7 @@
   width: 50px;
   height: 45px;
   margin-right: -20px;
-  padding: 12px 3px 2px 17px;
+  padding: 13px 3px 2px 19px;
   position: relative;
 }
 
@@ -146,19 +146,19 @@
   width: 50px;
   height: 45px;
   margin-left: 10px;
-  padding: 12px 3px 2px 17px;
+  padding: 12px 3px 2px 19px;
   position: relative;
 }
 
 .git-map {
   background-color: white;
-  height: 560px;
-  margin: 17px 20px 0px 0px;
+  height: 580px;
+  margin: 17px 10px 10px 0px;
   @include border-radius(15px);
 }
 
 .git-one {
-  background: url("what_is_git.png") no-repeat;
+  background: url("what_is_git.png") no-repeat 0 -10px;
   height: 560px;
   background-size: 100%;
 }
