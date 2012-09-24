@@ -33,8 +33,9 @@
    color: $white;
   }
   p {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: .01em;
     line-height: $baseLineHeight * 1.2;
     color: $white;
   }
