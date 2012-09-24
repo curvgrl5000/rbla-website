@@ -1,18 +1,15 @@
 #bookmark {
-  position: absolute;
-  z-index: 100000;
+  position: relative;
   background-color: $grayDark;
   margin: auto;
   padding: 20px;
-  left: 40%;
-  margin-left: 15%;
   top: 0px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 220px;
+  @include border-radius(10px);
 }
 
-#menu .wrapper h2 {
+#bookmark h2 {
   color: white;
   font-family: "ff-cocon-web-pro",sans-serif;
   font-weight: 400;
@@ -20,37 +17,37 @@
   letter-spacing: .0em;
 }
 
-#menu .wrapper h3 {
+#bookmark h3 {
   color: $white;
 }
-#menu .wrapper h4 {
+#bookmark h4 {
   color: $red;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-weight: 500;
 }
 
-#menu .wrapper li a  {
+#bookmark li a  {
   color: $grayLight;
 }
 
-#menu .wrapper li a:hover  {
+#bookmark li a:hover  {
   color: $red;
   text-decoration: none;
 }
 
 .main-message {
   height: 130px;
-  margin: 25px 200px 0px 0;
+  margin: 25px 25px 0px 0;
 }
 
 .cheat-sheets {
   padding: 30px;
-  margin: 40px 0px;
+  margin: 30px 0px;
   background: 
     $heroUnitBackground 0 0 repeat;
   background-position: top center;
-  background-size: 720px;
-  height: 720px;
+  background-size: 92%;
+  height: 100%;
   @include border-radius(6px);
   h1 {
     margin-bottom: 0;
@@ -114,9 +111,11 @@
 .canvas { 
   position: relative;
   margin: 0;
-  margin-bottom: 50px;  
+  margin-bottom: 50px;
+  padding: 0px;  
   top: 15px;
-  width: 220px; 
+  width: 220px;
+  height: 35px; 
 }    
 
 #twitter {
