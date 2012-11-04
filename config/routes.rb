@@ -1,6 +1,17 @@
 Wondergem::Application.routes.draw do
 
 
+  match '/cheat', to:  "static_pages#cheat"
+  
+  match '/cheatsheet_repository', to:  "static_pages#cheatsheet_repository"
+  match '/cheatsheet_install_git', to:  "static_pages#cheatsheet_install_git"
+  match '/cheatsheet_clone_a_repository', to:  "static_pages#cheatsheet_clone_a_repository"
+  match '/cheatsheet_merge_a_repository', to:  "static_pages#cheatsheet_merge_a_repository"
+  match '/cheatsheet_rollback_a_repository', to:  "static_pages#cheatsheet_rollback_a_repository"
+  
+  get "static_pages/help"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
