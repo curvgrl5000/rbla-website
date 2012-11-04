@@ -13,7 +13,7 @@
  *= require bootstrap
  *= require responsive
  *= require home
-
+ *= require devise
   
  */
      
