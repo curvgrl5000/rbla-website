@@ -1,6 +1,8 @@
 Wondergem::Application.routes.draw do
 
 
+  devise_for :users
+
   match '/cheat', to:  "static_pages#cheat"
   
   match '/cheatsheet_repository', to:  "static_pages#cheatsheet_repository"

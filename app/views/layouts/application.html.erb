@@ -21,6 +21,19 @@
           <span class="icon-bar"></span>
         </a>
         <a class="brand" href="#">Rails Bridge LA</a>
+
+
+				<!-- <div class="user-auth-nav">
+				  <% if user_signed_in? %>
+				  <%= link_to('Edit registration', edit_user_registration_path) %> |
+				  <%= link_to('Logout', destroy_user_session_path) %>
+				  <% else %>
+				  <%= link_to('Login', new_user_session_path) %> |
+				  <%= link_to('Register', new_user_registration_path) %>
+				  <% end %>
+				</div> -->
+
+
         <div class="nav-collapse">
           <ul class="nav">
             <li><a href="/">Home</a></li>
@@ -29,10 +42,18 @@
             <li><a href="mailto:tldavis801@gmail.com?Subject=Hello%20again">Contact Us</a></li>
           </ul>
         </div><!--/.nav-collapse -->
+        <ul class="nav pull-right">
+				<% if user_signed_in? %>
+			  <li><%= link_to('Edit registration', edit_user_registration_path) %></li>
+			  <li><%= link_to('Logout', destroy_user_session_path) %></li>
+			  <% else %>
+			  <li><%= link_to('Login', new_user_session_path) %></li>
+			  <li><%= link_to('Register', new_user_registration_path) %></li>
+			  <% end %>
       </div> <!--/ container   -->
     </div> <!--/ .nav-inner -->   
   </div> <!--/ .navbar-fixed-top  -->
-  <div class="container">       
+  <div class="container">      
     <%= yield %>
   </div>
   <footer>
