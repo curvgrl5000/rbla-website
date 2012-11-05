@@ -46,3 +46,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# Track git repo
+gem "meta_search"  # Last officially released gem
