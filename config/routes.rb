@@ -8,6 +8,8 @@ Wondergem::Application.routes.draw do
   match '/cheatsheet_clone_a_repository', to:  "static_pages#cheatsheet_clone_a_repository"
   match '/cheatsheet_merge_a_repository', to:  "static_pages#cheatsheet_merge_a_repository"
   match '/cheatsheet_rollback_a_repository', to:  "static_pages#cheatsheet_rollback_a_repository"
+  match '/cheatsheet_smalltalk', to:  "static_pages#cheatsheet_smalltalk"
+  
   
   get "static_pages/help"
 
