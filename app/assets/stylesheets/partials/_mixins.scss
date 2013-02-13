@@ -561,6 +561,7 @@
   // Set the container width, and override it for fixed navbars in media queries
   .container,
   .navbar-static-top .container,
+  .navbar-static-bottom .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
     @include grid-core-span($gridColumns, $gridColumnWidth, $gridGutterWidth);
@@ -606,7 +607,7 @@
       *margin-left: $fluidGridGutterWidth - (.5 / $gridRowWidth * 100px * 3%);
     }
     [class*="span"]:first-child {
-      margin-left: 0;
+      margin-left: 0%;
     }
 
     // generate .spanX and .offsetX
@@ -618,7 +619,7 @@
 @mixin grid-fluid-span-x($gridColumns, $fluidGridColumnWidth, $fluidGridGutterWidth) {
   @while $gridColumns > 0 {
     .span#{$gridColumns} { @include grid-fluid-span($gridColumns, $fluidGridColumnWidth, $fluidGridGutterWidth); }
-    $gridColumns: $gridColumns - 1;
+    $gridColumns: $gridColumns - 2;
   }
 }
 

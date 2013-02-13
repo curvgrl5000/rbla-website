@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.js
-//= require raphael.js 
+//= require raphael.js
+//= require scripts.js  

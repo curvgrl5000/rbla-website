@@ -1,9 +1,12 @@
+@import url('socialicoregular.scss'); /*social font*/
+@import url('font-awesome.scss'); /*icon font */
+
 #bookmark {
   position: relative;
   background-color: $grayDark;
   margin: auto;
-  padding: 20px;
-  top: 0px;
+  padding: 20px 0 20px 30px;
+  top: 20px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   @include border-radius(10px);
@@ -36,8 +39,7 @@
 }
 
 .main-message {
-  height: 130px;
-  margin: 25px 25px 0px 0;
+  margin: 25px 40px 25px 0;
 }
 
 .cheat-sheets {
@@ -108,14 +110,12 @@
 }
 
 // Get rid of the #canvas once we update the page
-.canvas { 
+.canvas  { 
   position: relative;
-  margin: 0;
-  margin-bottom: 50px;
-  padding: 0px;  
+  margin: auto;
+  padding: auto;  
   top: 15px;
-  width: 220px;
-  height: 35px; 
+  height: 65px; 
 }    
 
 #twitter {
@@ -149,6 +149,14 @@
   margin-left: 10px;
   padding: 12px 3px 2px 19px;
   position: relative;
+}
+
+.social li {
+  display: inline-block;
+  padding: 0 7px 0 7px;     
+}
+.social li a:hover {
+  opacity: .5;
 }
 
 .git-map {

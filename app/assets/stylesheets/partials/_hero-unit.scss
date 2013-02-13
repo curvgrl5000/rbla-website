@@ -4,13 +4,12 @@
 
 
 .hero-unit {
-  padding: 30px 60px 43px 50px;
-  margin-bottom: 10px;
+  padding: 10px 30px 50px 30px;
+  margin-bottom: 30px;
   background: 
-    //image-url("mannequin1.png") 200px 10px no-repeat,  
     $heroUnitBackground 0 0 repeat;
   background-position: top center;
-  background-size: 92%;
+  background-size: 63%;
   @include border-radius(6px);
   h1 {
     margin-bottom: 0;

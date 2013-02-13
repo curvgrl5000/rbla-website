@@ -8,7 +8,7 @@
   // Padding to set content in a bit
   body {
     padding-left: 20px;
-    padding-right: 0px;
+    padding-right: 20px;
   }
   // Negative indent the now static "fixed" navbar
   .navbar-fixed-top,
@@ -36,6 +36,29 @@
       margin-left: 0;
     }
   }
+  
+  .hero-unit h3 {
+    font-size: 130%;
+  }
+  .hero-unit h1 {
+  font-size: 180%;
+  }
+  
+  .hero-unit {
+    background-size: 100%;
+    background: url('shattered-2.png') 0 0 repeat-x;
+    padding: 10px 20px 40px 20px;
+  }
+  
+  .canvas { 
+    position: relative;
+    margin: 0px;
+    padding: 0 50px;  
+    top: 15px;
+    height: 65px; 
+  }
+  
+  
 
   // GRID & CONTAINERS
   // -----------------
@@ -70,7 +93,7 @@
     width: 100%;
     @include box-sizing(border-box);
   }
-
+  
   // FORM FIELDS
   // -----------
   // Make span* classes full width
