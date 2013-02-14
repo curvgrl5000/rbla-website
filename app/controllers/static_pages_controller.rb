@@ -16,8 +16,8 @@ class StaticPagesController < ApplicationController
   
   def cheatsheet_rollback_a_repository
   end
-  
 
   def help
-  end
+  end 
+  
 end
