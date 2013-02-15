@@ -17,6 +17,9 @@
     margin-left: -20px;
     margin-right: -20px;
   }
+  .navbar-inverse {
+    @include border-radius(6px);
+  }
   // Remove padding on container given explicit padding set on body
   .container-fluid {
     padding: 0;

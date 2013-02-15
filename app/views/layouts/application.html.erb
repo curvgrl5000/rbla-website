@@ -20,23 +20,28 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#">Rails Bridge LA</a>
+        <a class="brand" href="/">Rails Bridge LA</a>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Home", { :action => "index" } %></li>
+            <li><a href="/">Home</a></li>
             <li><a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/78638292/">About</a></li>
             <li><a href="#" rel="tooltip" data-placement="bottom" data-original-title="Coming Soon!">Blog</a></li>
             <li class="dropdown">
               <a id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                <li><%= link_to "Cheatsheets", cheat_path %></li>
-                <li><%= link_to "X", cheatsheet_repository_path %></li>
-                <li><%= link_to "Y", cheatsheet_install_git_path %></li>
-                <li><%= link_to "Z", cheatsheet_clone_a_repository_path %></li>
-                <li><%= link_to "A", cheatsheet_merge_a_repository_path %></li>
+                <li><%= link_to "All About Git", cheat_path %></li>
+                <li><%= link_to "How to Install Git", cheatsheet_install_git_path %></li>
+                <li><%= link_to "How to Create a Repository", cheatsheet_repository_path %></li>
+                <li><%= link_to "How to Clone a Repository", cheatsheet_clone_a_repository_path %></li>
+                <li><%= link_to "How to Merge a Repository", cheatsheet_merge_a_repository_path %></li>
+                <li><%= link_to "How to Rollback a Repository", cheatsheet_merge_a_repository_path %></li>
+                <li><%= link_to "Creating and Merging Branches", cheatsheet_merge_a_repository_path %></li>
+                <li><%= link_to "Deploying to Heroku", cheatsheet_merge_a_repository_path %></li>
+                <li><%= link_to "What is RVM", cheatsheet_merge_a_repository_path %></li>
+                <li><%= link_to "Setting Up Basic Testing", cheatsheet_merge_a_repository_path %></li>
               </ul>
             </li>
-            <li><a href="mailto:tldavis801@gmail.com?Subject=Hello%20again">Contact Us</a></li>
+            <li><a href="mailto:anna@curvecommunications.biz?Subject=Hello%20there">Contact Us</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div> <!--/ container   -->
@@ -50,94 +55,94 @@
       <div class="navbar-inverse">
         <div class="container">
           <ul class="nav">
-            <li><%= link_to "Home", { :action => "index" } %></li>
+            <li><a href="/">Home</a></li>
             <li><a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/78638292/">About</a></li>
-            <li><a href="mailto:tldavis801@gmail.com?Subject=Hello%20again">Contact Us</a></li>
+            <li><a href="mailto:anna@curvecommunications.biz?Subject=Hello%20there">Contact Us</a></li>
             <li><%= link_to "Cheatsheets",  cheat_path %></li>
           </ul>
         </div>  
         <div class="container">
           <div class="row-fluid">
-          				<div class="span4">
-          					<section>
-          						<h4>Helpful Links</h4>
-                      <ul>
-                        <li>Something > <%= link_to "Home", { :action => "index" } %></li>
-                        <li>Something > <%= link_to "Home", { :action => "index" } %></li>
-                        <li>Something > <%= link_to "Home", { :action => "index" } %></li>
-                        <li>Something > <%= link_to "Home", { :action => "index" } %></li>
-                      </ul>
-          						<strong>email:</strong> <a href="mailto:email@domain.com">something@companydomain.com</a> </p>
-          					</section>
-          					<!--close section-->
+            <div class="span4">
+					    <section>
+    						<h4>Helpful Links</h4>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/">Home</a></li>
+                </ul>
+    						<strong>email:</strong> <a href="mailto:email@domain.com">something@companydomain.com</a> 
+    					</section>
+    					<!--close section-->
 
-          					<section>
-          						<h4>Follow Us</h4>
-          							<ul class="social">
-            							<li><a class="socicon facebook" href="#" data-original-title="Facebook"></a></li>
-            							<li><a class="socicon twitterbird" href="#" data-original-title="Twitter"></a></li>
-            							<li><a class="socicon linkedin" href="#" data-original-title="LinkedIn"></a></li>
-            							<li><a class="socicon vimeo" href="#" data-original-title="Vimeo"></a></li>
-          						</ul>
-          						<div class="span4">
-          						  <img src="./images/rails_gem.jpeg">
-          						</div>
-          					</section>
-          					<!--close section--> 
-          				</div>
-          				<!-- close .span4 --> 
+    					<section>
+    						<h4>Follow Us</h4>
+    							<ul class="social">
+      							<li><a class="socicon facebook" href="#" data-original-title="Facebook"></a></li>
+      							<li><a class="socicon twitterbird" href="#" data-original-title="Twitter"></a></li>
+      							<li><a class="socicon linkedin" href="#" data-original-title="LinkedIn"></a></li>
+      							<li><a class="socicon vimeo" href="#" data-original-title="Vimeo"></a></li>
+    						</ul>
+    						<div class="span4">
+    						  <div class="gem"></div>
+    						</div>
+    					</section>
+    					<!--close section--> 
+    				</div>
+    				<!-- close .span4 --> 
 
-          				<!--section containing newsletter signup and recent images-->
-          				<div class="span4">
-          					<section>
-          						<h4>Stay Updated</h4>
-          						<p>Sign up for our newsletter. We won't share your email address.</p>
-          						<form action="yourscript.php" method="post">
-          							<div class="input-append">
-          								<input type="email" placeholder="Email Address" class="span6" name="email">
-          								<button class="btn btn-primary">Sign Up</button>
-          							</div>
-          							<!--close input-append-->
-          						</form>
-          					</section>
-          					<!--close section-->
+    				<!--section containing newsletter signup and recent images-->
+    				<div class="span4">
+    					<section>
+    						<h4>Stay Updated</h4>
+    						<p>Sign up for our newsletter. We won't share your email address.</p>
+    						<form action="yourscript.php" method="post">
+    							<div class="input-append">
+    								<input type="email" placeholder="Email Address" class="span6" name="email">
+    								<button class="btn btn-primary">Sign Up</button>
+    							</div>
+    							<!--close input-append-->
+    						</form>
+    					</section>
+    					<!--close section-->
 
-          					<section>
-          						<h4>Recent Images</h4>
-          						<ul class="image-widget clearfix">
-          							<li><a href="#"><img src="../image-widget/1.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/2.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/3.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/4.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/5.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/6.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/7.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/8.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/9.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/10.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/11.png" alt=""></a></li>
-          							<li><a href="#"><img src="../image-widget/12.png" alt=""></a></li>
-          						</ul>
-          					</section>
-          					<!--close section--> 
-          				</div>
-          				<!-- close .span4 --> 
-          				<!--section containing blog posts-->
-          				<div class="span4">
-          					<section>
-          						<h4>Latest Blog Posts</h4>
-          						<ul class="footerPosts">
-          							<li><a href="blog-single.html">We will amplify our power to benchmark</a> <span class="meta">December 10, 2012</span> </li>
-          							<li><a href="blog-single.html">We are revolutionized the conceptualization of structuring</a> <span class="meta">September 10, 2012</span> </li>
-          							<li><a href="blog-single.html">A company that can implement correctly</a> <span class="meta">September 10, 2012</span> </li>
-          							<li><a href="blog-single.html">Claritas est etiam processus dynamicus</a> <span class="meta">September 10, 2012</span> </li>
-          							<li><a href="blog-single.html">It is stunning to you!</a> <span class="meta">September 10, 2012</span> </li>
-          							<li class="last"><a href="blog-single.html">We will increase our aptitude to evolve </a> <span class="meta">November 15, 2012</span> </li>
-          						</ul>
-          					</section>
-          				</div>
-          				<!-- close .span4 --> 
-          			</div>
+              <section>
+    						<h4>Recent Images</h4>
+    						<ul class="image-widget clearfix">
+    							<li><a href="#"><img src="../image-widget/1.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/2.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/3.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/4.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/5.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/6.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/7.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/8.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/9.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/10.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/11.png" alt=""></a></li>
+    							<li><a href="#"><img src="../image-widget/12.png" alt=""></a></li>
+    						</ul>
+    					</section>
+    					<!--close section--> 
+    				</div>
+    				<!-- close .span4 --> 
+    				<!--section containing blog posts-->
+    				<div class="span4">
+    					<section>
+    						<h4>Latest Blog Posts</h4>
+    						<ul class="footerPosts">
+    							<li><a href="#">We will amplify our power to benchmark</a> <span class="meta">December 10, 2012</span> </li>
+    							<li><a href="blog-single.html">We are revolutionized the conceptualization of structuring</a> <span class="meta">September 10, 2012</span> </li>
+    							<li><a href="blog-single.html">A company that can implement correctly</a> <span class="meta">September 10, 2012</span> </li>
+    							<li><a href="blog-single.html">Claritas est etiam processus dynamicus</a> <span class="meta">September 10, 2012</span> </li>
+    							<li><a href="blog-single.html">It is stunning to you!</a> <span class="meta">September 10, 2012</span> </li>
+    							<li class="last"><a href="blog-single.html">We will increase our aptitude to evolve </a> <span class="meta">November 15, 2012</span> </li>
+    						</ul>
+    					</section>
+    				</div>
+    				<!-- close .span4 --> 
+    			</div>
         </div>
       </div>                    
     </div>
