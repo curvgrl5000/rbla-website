@@ -32,7 +32,7 @@
   }
   .navbar .container {
     width: auto;
-    padding: 0 20px;
+    padding: 0 35px;
   }
   // Account for brand name
   .navbar .brand {
@@ -171,6 +171,7 @@
 @media (min-width: 980px) {
 
   // Required to make the collapsing navbar work on regular desktops
+  
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
