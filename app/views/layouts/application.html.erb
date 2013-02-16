@@ -62,21 +62,29 @@
           </ul>
         </div>  
         <div class="container">
-          <div class="row-fluid">
+          <div class="row-fluid">                                                    
             <div class="span4">
 					    <section>
     						<h4>Helpful Links</h4>
                 <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/">Home</a></li>
+                  <%= link_to('Rails Bridge', "http://workshops.railsbridge.org/", :class => "popthis", :title => "Quick Detail:", :"data-content" => 
+                  "Links to the original Rails Bridge site started in San Francisco.") %><br>
+                  <%= link_to('Try Ruby', "http://www.codeschool.com/courses/try-ruby", :class => "popthis", :title => "Quick Detail:", :"data-content" => 
+                  "Interactive code quizzes from code school. ") %><br> 
+                  <%= link_to('Beginners Guide to RoR', "http://www.webmonkey.com/2010/02/ruby_on_rails_for_beginners/", :class => "popthis", :title => "Quick Detail:", :"data-content" => 
+                  "A beginners guide to Ruby on Rails. How to use it, setup, create and customize.") %><br> 
+                  <%= link_to('Language Terms', "http://guides.rubyonrails.org/getting_started.html", :class => "popthis", :title => "Quick Detail:", :"data-content" => 
+                  "A Guide to what is Ruby on Rails and the language terms.  Explores the general layout of a Rails application.") %><br> 
+                  <%= link_to('RoR Specialness', "http://astonj.com/tech/whats-so-special-about-ruby-on-rails/", :class => "popthis", :title => "Quick Detail:", :"data-content" => 
+                  "A great little article explaining the Ruby on Rails framework with lots of useful links.") %><br> 
+                  <%= link_to('Rails for Zombies', "http://railsforzombies.org", :class => "popthis", :title => "Quick Detail:", :"data-content" => 
+                  "An introductory course with language terms and coding for Ruby on Rails.") %>
                 </ul>
     						<strong>email:</strong> <a href="mailto:email@domain.com">something@companydomain.com</a> 
     					</section>
     					<!--close section-->
 
-    					<section>
+    					<section>                                                                    
     						<h4>Follow Us</h4>
     							<ul class="social">
       							<li><a class="socicon facebook" href="#" data-original-title="Facebook"></a></li>
@@ -155,6 +163,13 @@
       $('a[rel=tooltip]').tooltip();
       $('')
     });
+    $('.popthis').popover({
+ //    html : true           
+     toggle: true,
+     delay: { show: 500, hide: 100 },
+     placement: 'right',
+     trigger: 'hover',
+     });
     </script>
     
     <!-- THE RAPHAEL ICONS-->     
