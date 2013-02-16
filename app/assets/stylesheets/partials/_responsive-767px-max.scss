@@ -43,14 +43,25 @@
   .hero-unit h3 {
     font-size: 130%;
   }
-  .hero-unit h1 {
-  font-size: 180%;
-  }
   
   .hero-unit {
-    background-size: 100%;
-    background: url('shattered-2.png') 0 0 repeat-x;
+    background-size: 420%;
     padding: 10px 20px 40px 20px;
+  }
+  
+  .hero-unit h1 {
+  font-size: 170%;
+  }
+  
+  
+  h2 {
+  font-size: 175%;
+  line-height: 40px;
+  }
+  
+  h4 {
+  font-size: 110%;
+  line-height: 20px;
   }
   
   .canvas { 

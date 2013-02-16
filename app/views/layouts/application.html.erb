@@ -53,7 +53,7 @@
   <footer>
     <div class="navbar navbar-static-bottom">
       <div class="navbar-inverse">
-        <div class="container">
+        <div class="container big_border">
           <ul class="nav">
             <li><a href="/">Home</a></li>
             <li><a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/78638292/">About</a></li>
@@ -71,8 +71,8 @@
                   "Links to the original Rails Bridge site started in San Francisco.") %><br>
                   <%= link_to('Try Ruby', "http://www.codeschool.com/courses/try-ruby", :class => "popthis", :target => "_blank", :title => "Quick Detail:", :"data-content" => 
                   "Interactive code quizzes from code school. ") %><br> 
-                  <%= link_to('Beginners Guide to RoR', "http://www.webmonkey.com/2010/02/ruby_on_rails_for_beginners/", :class => "popthis", :target => "_blank", :title => "Quick Detail:", :"data-content" => 
-                  "A beginners guide to Ruby on Rails. How to use it, setup, create and customize.") %><br> 
+                  <%= link_to('Beginners Guide to RoR', "http://www.webmonkey.com/2010/02/ruby_on_rails_for_beginners/", :class => "popthis", :target => "_blank", :title => "Quick Detail:", 
+                  :"data-content" => "A beginners guide to Ruby on Rails. How to use it, setup, create and customize.") %><br> 
                   <%= link_to('Language Terms', "http://guides.rubyonrails.org/getting_started.html", :class => "popthis", :target => "_blank", :title => "Quick Detail:", :"data-content" => 
                   "A Guide to what is Ruby on Rails and the language terms.  Explores the general layout of a Rails application.") %><br> 
                   <%= link_to('RoR Specialness', "http://astonj.com/tech/whats-so-special-about-ruby-on-rails/", :class => "popthis", :target => "_blank", :title => "Quick Detail:", :"data-content" => 
@@ -114,22 +114,21 @@
     						</form>
     					</section>
     					<!--close section-->
-
               <section>
     						<h4>Recent Images</h4>
     						<ul class="image-widget clearfix">
-    							<li><a href="#"><img src="../image-widget/1.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/2.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/3.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/4.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/5.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/6.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/7.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/8.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/9.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/10.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/11.png" alt=""></a></li>
-    							<li><a href="#"><img src="../image-widget/12.png" alt=""></a></li>
+    						  <li><a href="#"><%=image_tag("1.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("2.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("3.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("4.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("5.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("6.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("7.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("8.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("9.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("10.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("11.png", alt: "Rails Gal", :class => "widget")%></a></li>
+    						  <li><a href="#"><%=image_tag("12.png", alt: "Rails Gal", :class => "widget")%></a></li>
     						</ul>
     					</section>
     					<!--close section--> 
@@ -140,19 +139,23 @@
     					<section>
     						<h4>Latest Blog Posts</h4>
     						<ul class="footerPosts">
-    							<li><a href="#">We will amplify our power to benchmark</a> <span class="meta">December 10, 2012</span> </li>
-    							<li><a href="blog-single.html">We are revolutionized the conceptualization of structuring</a> <span class="meta">September 10, 2012</span> </li>
-    							<li><a href="blog-single.html">A company that can implement correctly</a> <span class="meta">September 10, 2012</span> </li>
-    							<li><a href="blog-single.html">Claritas est etiam processus dynamicus</a> <span class="meta">September 10, 2012</span> </li>
-    							<li><a href="blog-single.html">It is stunning to you!</a> <span class="meta">September 10, 2012</span> </li>
-    							<li class="last"><a href="blog-single.html">We will increase our aptitude to evolve </a> <span class="meta">November 15, 2012</span> </li>
+    							<li><a href="#">We will amplify our power to </a> <span class="meta">Dec. 10, 2012</span> </li>
+    							<li><a href="blog-single.html">We are revolutionized the conceptualization of structuring</a> <span class="meta">Sept. 10, 2012</span> </li>
+    							<li><a href="blog-single.html">A company that can implement </a> <span class="meta">Sept. 10, 2012</span> </li>
+    							<li><a href="blog-single.html">Claritas est etiam processus </a> <span class="meta">Sept. 10, 2012</span> </li>
+    							<li><a href="blog-single.html">It is stunning to you!</a> <span class="meta">Sept. 10, 2012</span> </li>
+    							<li class="last"><a href="blog-single.html">We will increase our aptitude </a> <span class="meta">Nov. 15, 2012</span> </li>
     						</ul>
     					</section>
     				</div>
-    				<!-- close .span4 --> 
+    				<!-- close .span4 -->
     			</div>
+    			<section>
+  				  <h6 class="legal big_border_top">Copyright and Legal Information, 2013</h6>
+  				</section>
+  				
         </div>
-      </div>                    
+      </div>
     </div>
   </footer>
 <!-- Le javascript
