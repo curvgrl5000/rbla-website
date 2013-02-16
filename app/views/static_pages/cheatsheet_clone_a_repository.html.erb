@@ -1,41 +1,43 @@
 <div class="row-fluid">
-  <div class="cheat-sheets span11">   
-      <div class="span7">
-        <h2>Local & Remote Environments</h2>
-        <div class="git-map git-one"></div>
-      </div>
-      <div class="span5 red-bkgrnd" id="opacity-90">
-        <h5>CHEATSHEET:</h5>
-        <h2>ALL ABOUT GIT</h2>
-        <div class="accordion" id="accordion2">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data=parent="#accordion2" href="#collapseOne">
-                What is Git? 
-              </a> 
-            </div>
+  <div class="cheat-sheets span12">   
+    <div class="span6">
+      <h2>Local & Remote Environments</h2>
+      <div class="git-map git-one"></div>
+    </div> <!-- //end span6  -->
+    
+    <div class="span6 red-bkgrnd" id="opacity-90">
+      <h5>CHEATSHEET:</h5>
+      <h2>HOW TO CLONE A REPOSITORY</h2>
+      <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data=parent="#accordion2" href="#collapseOne">
+              What is Git? 
+            </a> 
+          </div> <!-- //end accordion-heading    -->
+          
           <div id="collapseOne" class="accordion-body collapse">
             <div class="accordion-inner">
               <p>
-              <a href="http://git-scm.com/">Git</a> is a distributed open source Version Control System that tracks content such as files and directories.
-              Git allows the creation of a history for a collection of files, and stores the file content in BLOBs (binary large objects);
-              which are captured in states that are fully accessible.
+                <a href="http://git-scm.com/">Git</a> is a distributed open source Version Control System that tracks content such as files and directories.
+                Git allows the creation of a history for a collection of files, and stores the file content in BLOBs (binary large objects);
+                which are captured in states that are fully accessible.
               </p>
               <p>
-              The state of a project might be a different collection of files or different content within the files. States can be saved
-              as "Branches", which are akin to a copied file.
+                The state of a project might be a different collection of files or different content within the files. States can be saved
+                as "Branches", which are akin to a copied file.
               </p>  
               <p>
-              Since a distributed version control system has no central server, every local copy contains the full history of 
-              a project and is stored in a "Commit Object". Every time you make a modification, you have to "Commit" the change.
+                Since a distributed version control system has no central server, every local copy contains the full history of 
+                a project and is stored in a "Commit Object". Every time you make a modification, you have to "Commit" the change.
               </p>
               <p>
-              The "Commit File" keeps track of all versions including the author, committer and comments about the updated changes, plus any "Parent" commits that 
-              directly precede it allowing to revert back to any point in a project's code history. Git can be used from the command line or terminal.
+                The "Commit File" keeps track of all versions including the author, committer and comments about the updated changes, plus any "Parent" commits that 
+                directly precede it allowing to revert back to any point in a project's code history. Git can be used from the command line or terminal.
               </p>
             </div>
-          </div>
-        </div>
+          </div> <!-- //end collapseOne -->
+        </div> <!-- //end accordion-group   -->
         
         <div class="accordion-group">
           <div class="accordion-heading">
@@ -46,17 +48,17 @@
           <div id="collapseTwo" class="accordion-body collapse">
             <div class="accordion-inner">
               <p><a href="https://github.com/">Github </a>is an open source project that manages and stores revisions of projects. It's literally a Git repository hosting service, 
-              with many of it's own features, such as wikis and basic task management tools for every project. The flagship functionality is
-              "forking" or copying a repository from one user's account to another; which enables a user to modify a project in a user's own account.
-              If you make changes you'd like to share, you can send a notification called a "pull request" to the original owner, then with a 
-              click of a button, merge the changes found in your repo with the original repository.
+                with many of it's own features, such as wikis and basic task management tools for every project. The flagship functionality is
+                "forking" or copying a repository from one user's account to another; which enables a user to modify a project in a user's own account.
+                If you make changes you'd like to share, you can send a notification called a "pull request" to the original owner, then with a 
+                click of a button, merge the changes found in your repo with the original repository.
               </p>
               <p>It makes contribution management easier allowing for both open-source and private repositories to have a place for
                 both development discussions and patch distribution.
               </p> 
             </div>
-          </div>
-        </div>
+          </div> <!-- //end collapseTwo -->   
+        </div> <!-- //end accordion-group   -->       
         
         <div class="accordion-group">
           <div class="accordion-heading">
@@ -72,13 +74,13 @@
               </p>
               <p>The open source community uses repositories to allow software to be found easier and a safe, trusted place to organize projects
                 that a team can work with. Repositories can be set up Locally ( on one's computer ) or Remotely ( on a server in the cloud, like Github or Heroku). 
-            </div>
-          </div>
-        </div>
+              </div>
+            </div> <!-- //end collapseThree -->  
+          </div> <!-- //end accordion-group   --> 
         
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseFour">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseFour">
               What are Local Repositories?
             </a>
           </div>
@@ -89,8 +91,8 @@
                 from their local copy to a remote copy by Pulling and Posting; which creates the basic work flow of software development.
               </p> 
             </div>
-          </div>
-        </div>
+          </div>   <!-- //end collapseFour -->  
+        </div> <!-- //end accordion-group   -->  
         
         <div class="accordion-group">
           <div class="accordion-heading">
@@ -109,8 +111,8 @@
               from the remote repository, then continue working locally and send or "Git Push" new changes or "Commits" to contribute to shared repositories.
               </p>
             </div>
-          </div>
-        </div>
+          </div> <!-- //end collapseFive -->
+        </div> <!-- //end accordion-group   --> 
         
         <div class="accordion-group">
           <div class="accordion-heading">
@@ -127,28 +129,30 @@
                 This focus on productivity makes development both easier and painless to build and run cloud applications.
                 Designed as an open-source project in Ruby on Rails, the workflow is well documented and works seamlessly with Git.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
+            </div> <!-- // end accordion-inner  -->
+          </div> <!-- //end collapseSix   -->
+        </div> <!-- //end accordion-group  -->
+      </div> <!-- //end accordion2 -->
       
       <div class="btn-group dropup">
-       <button class="btn">Next Cheatsheet</button>
-       <button class="btn dropdown-toggle" data-toggle="dropdown">
-         <span class="caret"></span>
-       </button>
+        <button class="btn">Next Cheatsheet</button>
+        <button class="btn dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
         <ul class="dropdown-menu">
-          <li><%= link_to "How to Create a Repository",  cheatsheet_repository_path %>
           <li><%= link_to "How to Install Git",  cheatsheet_install_git_path %>
+          <li><%= link_to "How to Create a Repository",  cheatsheet_repository_path %>
           <li><%= link_to "How to Clone a Repository",  cheatsheet_clone_a_repository_path %>
           <li><%= link_to "How to Merge a Repository",  cheatsheet_merge_a_repository_path %>
           <li><%= link_to "How to Rollback a Repository",  cheatsheet_rollback_a_repository_path %>
         </ul>
-       </div>
+      </div> <!-- //btn-group dropup  -->
+      
       <!-- social networks -->
       <div class="canvas">
         <a href="/"><div id="twitter"></div></a>
         <a href="/"><div id="github"></div></a>
       </div>
-  </div>
-</div>
+    </div> <!-- //span5 red-bkgrnd   -->
+  </div> <!-- // end cheat-sheets span11   -->
+</div> <!-- //end row-fluid -->
