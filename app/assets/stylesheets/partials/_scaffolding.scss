@@ -28,6 +28,15 @@ a:hover {
   color: $linkColorHover;
   text-decoration: none;
 }
+a.onred {
+  color: $linkColorRed;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover.onred {
+  color: $linkColorHoverRed;
+  text-decoration: none;
+}
 
 
 // Images

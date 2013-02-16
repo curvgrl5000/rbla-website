@@ -10,34 +10,42 @@
         <p>Web design has become more sophisticated, making the knowledge of back-end development priceless.
           RailsBridge is dedicated to increase gender diversity in the Ruby community by helping women learn Ruby and RoR via a free series of outreach workshops in the Los Angeles area. <br>
         </p>
+        <p class="span3 pull-right">
+          <%=image_tag("rails_gem.jpeg", alt: "Rails Gem", :class => "gem")%>
+			  </p>
         <p> 
-          All levels of experience welcome; from having never coded to years of experience! 
+          All levels of experience welcome; from having never coded to years of experience! For more information go to the 
+          <a class="onred" href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/103985512/" target="_blank">
+            Rails Bridge Meetup
+          </a>
+          Page. 
           <span class="accent-white"><br> Come Join Us!</span>
         </p> 
       </div>
       <div class="canvas span6">
-        <a href="/"><div id="twitter"></div></a>
-        <a href="/"><div id="github"></div></a>
-        <a href="/"><div id="linkedin"></div></a>  
+        <%= link_to "", "", :id => "twitter", :target => "_blank" %>
+        <%= link_to "", "", :id => "github", :target => "_blank" %>
+        <%= link_to "", "", :id => "linkedin", :target => "_blank" %>
       </div> <!-- //canvas  -->
     </div> <!-- //span8    -->
      
       <div id="bookmark" class="span4">
-      <h4>Next Workshop:</h4>
-      <h2>Friday, <br> Sept. 21, 2013</h2>
+      <h4>Next Workshops:</h4>
+      <h2>Thurs, Feb. 21, 2013</h2>
+      <h2>Fri, Feb. 22, 2013</h2>
+                                                                                                  
       <h4>
-        <a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/103985512/">
-          Hosted at Holiday Inn Media Center
-        </a>
+        <%= link_to "Hosted at Holiday Inn Media Center", "http://www.holidayinn.com/hotels/us/en/burbank/laxbb/hoteldetail/directions", :target => "_blank", :title => "Location of Event" %>
       </h4>
       <ul>
         <li class="highlight">Thursday: 6 - 9 pm: Installfest</li>
         <li class="highlight">Friday: 9 am - 4 pm: Workshop</li>
-        <li class="page_item page-item-44"><a href="/">150 East Angelano,</li>
-        <li class="page_item page-item-44"><a href="/">Burbank, CA 90401</a></li>
+        <li class="page_item page-item-44">
+          <%= link_to "150 East Angelano, Burbank, CA 90401", "http://www.holidayinn.com/hotels/us/en/burbank/laxbb/hoteldetail/directions", :target => "_blank", :title => "Location of Event" %>
+        </li>
       </ul>
       <div>
-      <iframe width="90%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=150+East+Angelano,+Burbank,+CA&amp;ie=UTF8&amp;hq=&amp;hnear=150+E+Angeleno+Ave,+Burbank,+Los+Angeles,+California+91502&amp;t=m&amp;ll=34.179572,-118.308249&amp;spn=0.021302,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=150+East+Angelano,+Burbank,+CA&amp;ie=UTF8&amp;hq=&amp;hnear=150+E+Angeleno+Ave,+Burbank,+Los+Angeles,+California+91502&amp;t=m&amp;ll=34.179572,-118.308249&amp;spn=0.021302,0.025749&amp;z=14&amp;iwloc=A&amp;source=embed" style="text-align:left">View Larger Map</a></small> 
+      <iframe width="90%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="https://maps.google.com/maps?q=150+East+Angelano,+Burbank,+CA&amp;ie=UTF8&amp;hq=&amp;hnear=150+E+Angeleno+Ave,+Burbank,+Los+Angeles,+California+91502&amp;t=m&amp;ll=34.179572,-118.308249&amp;spn=0.021302,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=150+East+Angelano,+Burbank,+CA&amp;ie=UTF8&amp;hq=&amp;hnear=150+E+Angeleno+Ave,+Burbank,+Los+Angeles,+California+91502&amp;t=m&amp;ll=34.179572,-118.308249&amp;spn=0.021302,0.025749&amp;z=14&amp;iwloc=A&amp;source=embed" target="_blank" style="text-align:left">View Larger Map</a></small> 
       </div> <!-- //iframe -->
     </div> <!-- //end span4 bookmark  -->  
   </div> <!-- //hero-unit span11 -->
