@@ -31,14 +31,16 @@
               <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
                 <li><%= link_to "All About Git", cheat_path %></li>
                 <li><%= link_to "How to Install Git", cheatsheet_install_git_path %></li>
-                <li><%= link_to "How to Create a Repository", cheatsheet_repository_path %></li>
-                <li><%= link_to "How to Clone a Repository", cheatsheet_clone_a_repository_path %></li>
-                <li><%= link_to "How to Merge a Repository", cheatsheet_merge_a_repository_path %></li>
-                <li><%= link_to "How to Rollback a Repository", cheatsheet_merge_a_repository_path %></li>
-                <li><%= link_to "Creating and Merging Branches", cheatsheet_merge_a_repository_path %></li>
-                <li><%= link_to "Deploying to Heroku", cheatsheet_merge_a_repository_path %></li>
-                <li><%= link_to "What is RVM", cheatsheet_merge_a_repository_path %></li>
-                <li><%= link_to "Setting Up Basic Testing", cheatsheet_merge_a_repository_path %></li>
+                <li><%= link_to "How to Create a Git Repository", cheatsheet_repository_path %></li>
+                <li><%= link_to "How to Clone a Git Repository", cheatsheet_clone_a_repository_path %></li>
+                <li><%= link_to "Create and Merge Git Branches", cheatsheet_merge_a_repository_path %></li>
+                <li><%= link_to "How to Rollback a Git Repository", cheatsheet_rollback_a_repository_path %></li>
+                <li><%= link_to "Scaffolding Basics", cheatsheet_scaffolding_path %></li>
+                <li><%= link_to "Basic Ruby", cheatsheet_basic_ruby_path %></li>
+                <li><%= link_to "Deploying to Heroku", cheatsheet_deploying_to_heroku_path %></li>
+                <li><%= link_to "RVM: Ruby Version Control", cheatsheet_rvm_ruby_version_control_path %></li>
+                <li><%= link_to "Command Line Basics", cheatsheet_command_line_basics_path %></li>
+                <li><%= link_to "Overview of Basic Testing", cheatsheet_basic_overview_of_testing_path %></li>
               </ul>
             </li>
             <li><a href="mailto:anna@curvecommunications.biz?Subject=Hello%20there">Contact Us</a></li>
@@ -87,10 +89,15 @@
     					<section>                                                                    
     						<h4>Follow Us</h4>
     							<ul class="social">
-      							<li><a class="socicon facebook" href="#" data-original-title="Facebook"></a></li>
-      							<li><a class="socicon twitterbird" href="#" data-original-title="Twitter"></a></li>
-      							<li><a class="socicon linkedin" href="#" data-original-title="LinkedIn"></a></li>
-      							<li><a class="socicon vimeo" href="#" data-original-title="Vimeo"></a></li>
+      							<li><a class="socicon facebook" href="http://www.facebook.com/railsbridge" data-original-title="Facebook"></a></li>
+      							<li><a class="socicon twitterbird" href="https://twitter.com/railsbridge" data-original-title="Twitter"></a></li>
+      							<li>
+      							  <a class="socicon linkedin" 
+      							  href="http://www.linkedin.com/groups/RailsBridge-Alumni-Network-2123131?gid=2123131&mostPopular=&trk=tyah"
+      							  data-original-title="LinkedIn" target="_blank">
+      							  </a>
+      							</li>
+      							<li><a class="socicon vimeo" href="http://vimeo.com/5180581" data-original-title="Vimeo"></a></li>
     						</ul>
     						<div class="span6">
     						  <%=image_tag("rails_gem.jpeg", alt: "Rails Gem", :class => "gem")%>

@@ -1,21 +1,26 @@
 Wondergem::Application.routes.draw do
 
 
-  match '/cheat', to:  "static_pages#cheat"
+  match '/cheat', to:  "static_pages#cheat"   #All About Git
+  match '/cheatsheet_install_git', to:  "static_pages#cheatsheet_install_git"  # HOW TO INSTALL GIT
+  match '/cheatsheet_repository', to:  "static_pages#cheatsheet_repository"   # HOW TO CREATE  A GIT REPOSITORY
+  match '/cheatsheet_clone_a_repository', to:  "static_pages#cheatsheet_clone_a_repository" # HOW TO CLONE A GIT REPOSITORY
+  match '/cheatsheet_merge_a_repository', to:  "static_pages#cheatsheet_merge_a_repository"  # CREATE AND MERGE A GIT REPOSITORY 
+  match '/cheatsheet_rollback_a_repository', to:  "static_pages#cheatsheet_rollback_a_repository"  # HOW TO ROLLBACK A RESPOSITORY
+  match '/cheatsheet_scaffolding', to:  "static_pages#cheatsheet_scaffolding" # SCAFFOLDING BASICS
+  match '/cheatsheet_basic_ruby', to:  "static_pages#cheatsheet_basic_ruby" #RUBY BASICS
+  match '/cheatsheet_deploying_to_heroku', to:  "static_pages#cheatsheet_deploying_to_heroku"  #DEPLOYING TO HEROKU 
+  match '/cheatsheet_rvm_ruby_version_control', to:  "static_pages#cheatsheet_rvm_ruby_version_control"  #RVM: RUBY VERSION CONTROL
+  match '/cheatsheet_command_line_basics', to:  "static_pages#cheatsheet_command_line_basics"  #COMMAND LINE BASICS
+  match '/cheatsheet_basic_overview_of_testing', to:  "static_pages#cheatsheet_basic_overview_of_testing"  #OVERVIEW OF TESTING  
   
-  match '/cheatsheet_repository', to:  "static_pages#cheatsheet_repository"
-  match '/cheatsheet_install_git', to:  "static_pages#cheatsheet_install_git"
-  match '/cheatsheet_clone_a_repository', to:  "static_pages#cheatsheet_clone_a_repository"
-  match '/cheatsheet_merge_a_repository', to:  "static_pages#cheatsheet_merge_a_repository"
-  match '/cheatsheet_rollback_a_repository', to:  "static_pages#cheatsheet_rollback_a_repository"
   match '/cheatsheet_smalltalk', to:  "static_pages#cheatsheet_smalltalk"
-  
   
   get "static_pages/help"
 
 
   # The priority is based upon order of creation:
-  # first created -> highest priority.
+  # first created -> highest priority.                                       
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

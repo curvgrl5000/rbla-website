@@ -1,13 +1,13 @@
 <div class="row-fluid">
   <div class="cheat-sheets span12">   
     <div class="span6">
-      <h2>Local & Remote Environments</h2>
+      <h2>Dummy Copy - Illustration to come</h2>
       <div class="git-map git-one"></div>
     </div> <!-- //end span6  -->
     
     <div class="span6 red-bkgrnd" id="opacity-90">
       <h5>CHEATSHEET:</h5>
-      <h2>HOW TO ROLLBACK A REPOSITORY</h2>
+      <h2>HOW TO ROLLBACK A GIT REPOSITORY</h2>
       <div class="accordion" id="accordion2">
         <div class="accordion-group">
           <div class="accordion-heading">
@@ -140,18 +140,25 @@
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
-          <li><%= link_to "How to Install Git",  cheatsheet_install_git_path %>
-          <li><%= link_to "How to Create a Repository",  cheatsheet_repository_path %>
-          <li><%= link_to "How to Clone a Repository",  cheatsheet_clone_a_repository_path %>
-          <li><%= link_to "How to Merge a Repository",  cheatsheet_merge_a_repository_path %>
-          <li><%= link_to "How to Rollback a Repository",  cheatsheet_rollback_a_repository_path %>
+          <li><%= link_to "All About Git", cheat_path %></li>
+          <li><%= link_to "How to Install Git", cheatsheet_install_git_path %></li>
+          <li><%= link_to "How to Create a Git Repository", cheatsheet_repository_path %></li>
+          <li><%= link_to "How to Clone a Git Repository", cheatsheet_clone_a_repository_path %></li>
+          <li><%= link_to "Create and Merge Git Branches", cheatsheet_merge_a_repository_path %></li>
+          <li><%= link_to "How to Rollback a Git Repository", cheatsheet_rollback_a_repository_path %></li>
+          <li><%= link_to "Scaffolding Basics", cheatsheet_scaffolding_path %></li>
+          <li><%= link_to "Basic Ruby", cheatsheet_basic_ruby_path %></li>
+          <li><%= link_to "Deploying to Heroku", cheatsheet_deploying_to_heroku_path %></li>
+          <li><%= link_to "RVM: Ruby Version Control", cheatsheet_rvm_ruby_version_control_path %></li>
+          <li><%= link_to "Command Line Basics", cheatsheet_command_line_basics_path %></li>
+          <li><%= link_to "Overview of Basic Testing", cheatsheet_basic_overview_of_testing_path %></li>
         </ul>
       </div> <!-- //btn-group dropup  -->
       
       <!-- social networks -->
       <div class="canvas">
-        <a href="/"><div id="twitter"></div></a>
-        <a href="/"><div id="github"></div></a>
+        <%= link_to "", "https://twitter.com/railsbridge", :id => "twitter", :target => "_blank" %>
+        <%= link_to "", "https://github.com/railsbridge", :id => "github", :target => "_blank" %>
       </div>
     </div> <!-- //span5 red-bkgrnd   -->
   </div> <!-- // end cheat-sheets span11   -->

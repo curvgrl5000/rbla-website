@@ -47,14 +47,17 @@
           </div>
           <div id="collapseTwo" class="accordion-body collapse">
             <div class="accordion-inner">
-              <p><a href="https://github.com/">Github </a>is an open source project that manages and stores revisions of projects. It's literally a Git repository hosting service, 
-                with many of it's own features, such as wikis and basic task management tools for every project. The flagship functionality is
+              <p>
+                <a href="https://github.com/">Github </a>is an open source project that manages and stores revisions of projects. 
+                It's literally a Git repository hosting service, with many of it's own features, such as wikis and basic task management tools 
+                for every project. The flagship functionality is
                 "forking" or copying a repository from one user's account to another; which enables a user to modify a project in a user's own account.
                 If you make changes you'd like to share, you can send a notification called a "pull request" to the original owner, then with a 
                 click of a button, merge the changes found in your repo with the original repository.
               </p>
               <p>It makes contribution management easier allowing for both open-source and private repositories to have a place for
-                both development discussions and patch distribution.
+                both development discussions and patch distribution.<br>
+                <%= link_to "Create your Github Account Today!", "https://github.com/", :target => "_blank" %>
               </p> 
             </div>
           </div> <!-- //end collapseTwo -->   
@@ -73,7 +76,8 @@
                  having to travel across a network.
               </p>
               <p>The open source community uses repositories to allow software to be found easier and a safe, trusted place to organize projects
-                that a team can work with. Repositories can be set up Locally ( on one's computer ) or Remotely ( on a server in the cloud, like Github or Heroku). 
+                that a team can work with. Repositories can be set up locally; on one's computer or remotely; on a server in the cloud, like 
+                Github or Heroku. 
               </div>
             </div> <!-- //end collapseThree -->  
           </div> <!-- //end accordion-group   --> 
@@ -140,18 +144,25 @@
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
-          <li><%= link_to "How to Install Git",  cheatsheet_install_git_path %>
-          <li><%= link_to "How to Create a Repository",  cheatsheet_repository_path %>
-          <li><%= link_to "How to Clone a Repository",  cheatsheet_clone_a_repository_path %>
-          <li><%= link_to "How to Merge a Repository",  cheatsheet_merge_a_repository_path %>
-          <li><%= link_to "How to Rollback a Repository",  cheatsheet_rollback_a_repository_path %>
+          <li><%= link_to "All About Git", cheat_path %></li>
+          <li><%= link_to "How to Install Git", cheatsheet_install_git_path %></li>
+          <li><%= link_to "How to Create a Git Repository", cheatsheet_repository_path %></li>
+          <li><%= link_to "How to Clone a Git Repository", cheatsheet_clone_a_repository_path %></li>
+          <li><%= link_to "Create and Merge Git Branches", cheatsheet_merge_a_repository_path %></li>
+          <li><%= link_to "How to Rollback a Git Repository", cheatsheet_rollback_a_repository_path %></li>
+          <li><%= link_to "Scaffolding Basics", cheatsheet_scaffolding_path %></li>
+          <li><%= link_to "Basic Ruby", cheatsheet_basic_ruby_path %></li>
+          <li><%= link_to "Deploying to Heroku", cheatsheet_deploying_to_heroku_path %></li>
+          <li><%= link_to "RVM: Ruby Version Control", cheatsheet_rvm_ruby_version_control_path %></li>
+          <li><%= link_to "Command Line Basics", cheatsheet_command_line_basics_path %></li>
+          <li><%= link_to "Overview of Basic Testing", cheatsheet_basic_overview_of_testing_path %></li>
         </ul>
       </div> <!-- //btn-group dropup  -->
       
       <!-- social networks -->
       <div class="canvas">
-        <a href="/"><div id="twitter"></div></a>
-        <a href="/"><div id="github"></div></a>
+        <%= link_to "", "https://twitter.com/railsbridge", :id => "twitter", :target => "_blank" %>
+        <%= link_to "", "https://github.com/railsbridge", :id => "github", :target => "_blank" %>
       </div>
     </div> <!-- //span5 red-bkgrnd   -->
   </div> <!-- // end cheat-sheets span11   -->
