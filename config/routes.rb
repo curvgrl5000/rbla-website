@@ -1,5 +1,11 @@
 Wondergem::Application.routes.draw do
+  ActiveAdmin.routes(self)
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
+  devise_for :users
+
+  mount Blogit::Engine => "/blog"
 
   match '/cheat', to:  "static_pages#cheat"   #All About Git
   match '/cheatsheet_install_git', to:  "static_pages#cheatsheet_install_git"  # HOW TO INSTALL GIT

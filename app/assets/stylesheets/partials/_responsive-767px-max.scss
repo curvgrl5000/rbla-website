@@ -63,6 +63,12 @@
   font-size: 110%;
   line-height: 20px;
   }
+  .cheat-sheets h2 {
+    font-family: "ff-cocon-web-pro";
+    font-style: italic;
+    font-size: 180%;
+    line-height: 23px;
+  }
   
   .canvas { 
     position: relative;
@@ -71,8 +77,9 @@
     top: 15px;
     height: 65px; 
   }
-  
-  
+  .cheat-sheets {
+    padding: 5px 30px 30px 30px;
+  }
 
   // GRID & CONTAINERS
   // -----------------
@@ -106,6 +113,48 @@
   .row-fluid .span12 {
     width: 100%;
     @include box-sizing(border-box);
+  }
+  // GRAPHICS 
+  
+  .git-map {
+    background-color: #CDCFD0;     
+    height: 300px;
+    margin: 0px 0px 20px 0px;
+  }
+  .git-one {
+    background: #CDCFD0 url("what_is_git.png") no-repeat 0px 0px;
+    background-size: 100%;
+    background-color: #CDCFD0;     
+  }
+  .git-two {
+    background: #CDCFD0 url("git_started.png")  0px 0px no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .git-three-naming {
+    background: #fff url("create_a_repo_naming.png") no-repeat;
+    height: 70px;
+    background-size: 100%;
+    background-position-x: -53px;
+  }
+  .git-three-description {
+    background: white url("create_a_repo_description.png") no-repeat;
+    height: 63px;
+    background-size: 103%;
+    background-position-x: -12px;
+  }
+  .git-three-public {
+    background: white url("create_a_repo_public.png") no-repeat;
+    height: 100px;
+    background-size: 74%;
+    background-position-x: -8px;
+    margin: 5px 0;
+  }
+  .git-three-readme {
+    background: white url("create_repo_readme2.png") no-repeat;
+    height: 300px;
+    background-size: 85%;
+    background-position-x: 0px;
   }
   
   // FORM FIELDS
@@ -161,6 +210,74 @@
   .page-header h1 small {
     display: block;
     line-height: $baseLineHeight;
+  }
+  
+  h6.legal {
+    margin-left: 0px;
+    width: auto;   
+  }
+  .coding h6.steps {
+    font-size: 90%;
+    margin: 0 -10px 5px -10px;
+    padding-left: 10px;
+  }
+  
+  .cheat-sheets h2 {
+    font-family: "ff-cocon-web-pro";
+    font-style: italic;
+    font-size: 130%;
+    line-height: 23px;
+  }
+  
+  //  Top Graphic
+  .git-map {
+    height: 300px;
+    margin-bottom: 10px;     
+  }
+  .git-one {
+    background: #CDCFD0 url("what_is_git.png") no-repeat 0 0px;
+    background-size: 100%;
+  }
+  .git-two {
+    background: #CDCFD0 url("git_started.png") no-repeat;
+    background-size: 100%;
+  }
+  .git-three-repo {
+    background: #CDCFD0 url("create_a_repo_logo.png") no-repeat;
+    height: 79px;
+    background-size: 100%;
+  }
+  .git-three-naming {
+    background: #fff url("create_a_repo_naming.png") no-repeat;
+    height: 60px;
+    background-size: 180%;
+    background-position-x: -73px;
+  }
+  .git-three-description {
+    background: white url("create_a_repo_description.png") no-repeat;
+    height: 65px;
+    background-size: 170%;
+    background-position-x: -12px;
+  }
+  .git-three-public {
+    background: white url("create_a_repo_public.png") no-repeat;
+    height: 100px;
+    background-size: 105%;
+    background-position-x: -8px;
+    margin: 5px 0;
+  }
+  .git-three-readme {
+    background: white url("create_repo_readme2.png") no-repeat;
+    height: 183px;
+    background-size: 104%;
+    background-position-x: 0px;
+  }
+  .cheat-sheets {
+    padding: 5px 30px 30px 30px;        
+    margin: 10px 0px;
+    background: url("shattered-tall.png") 0 0 repeat;
+    background-position: top center;
+    background-size: 78%;      
   }
 
   // Update checkboxes for iOS

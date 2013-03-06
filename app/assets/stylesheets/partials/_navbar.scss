@@ -10,6 +10,8 @@
 .navbar {
   overflow: visible;
   margin-bottom: $baseLineHeight;
+  margin-bottom: 10px;
+  
   color: $navbarText;
 
   // Fix for IE7's bad z-indexing so dropdowns don't appear below content that follows the navbar
@@ -196,8 +198,7 @@
 }
 .navbar-fixed-top .navbar-inner,
 .navbar-fixed-bottom .navbar-inner {
-  padding-left:  0;
-  padding-right: 0;
+  padding: 5px 0px 5px 30px;
   @include border-radius(0);
 }
 

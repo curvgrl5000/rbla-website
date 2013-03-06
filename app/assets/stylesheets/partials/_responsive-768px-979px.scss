@@ -21,12 +21,49 @@
       *width: 30.91489%;
     }
     
+    .git-map {
+      background-color: #CDCFD0;     
+      height: 410px;
+    }
+    
+    .git-one {
+      background: #CDCFD0 url("what_is_git.png") no-repeat 0 -10px;
+      background-size: 100%;
+    }
+    
+    .git-two {
+      background: #CDCFD0 url("git_started.png")  0px 0px no-repeat;
+      background-size: 95%;
+      background-position: center;
+    }  
+    
     h2 {
     font-size: 170%;
     line-height: 40px;
     }
     
-
+   
   // No need to reset .thumbnails here since it's the same $gridGutterWidth
 
 }
+
+@media (min-width: 979px) and (max-width: 1199px) {
+  //GRAphics for the Cheatsheets
+  
+  .git-map {
+    background-color: #CDCFD0;     
+    height: 410px;
+    margin-bottom: 20px;
+  }
+  .git-one {
+    background: #CDCFD0 url("what_is_git.png") no-repeat 0px -10px;
+    background-size: 100%;
+    background-color: #CDCFD0;     
+  }
+  .git-two {
+    background: #CDCFD0 url("git_started.png")  0px 0px no-repeat;
+    background-size: 95%;
+    background-position: center;
+  }
+
+}   

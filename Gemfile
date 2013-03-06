@@ -7,6 +7,15 @@ gem 'rails', '3.2.6'
 
 group :development do
   gem 'sqlite3'
+  gem 'pry'
+  gem 'pry-nav'
+  gem 'pry-stack_explorer'
+  gem 'pry-rails'
+  gem 'slim-rails'
+  gem 'table_print', '~> 1.0.0'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request', '0.2.1'
 end
 
 group :production do
@@ -20,10 +29,8 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1' 
   
-  group :assets do
-    gem 'compass-rails'
-    # Add any compass extensions here
-  end
+  gem 'compass-rails'
+  # Add any compass extensions here
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -31,6 +38,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'blogit'
+gem 'devise'
+
+gem 'activeadmin', git: 'https://github.com/gregbell/active_admin.git'
+gem "meta_search",    '>= 1.1.0.pre'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

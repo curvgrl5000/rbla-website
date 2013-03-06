@@ -20,6 +20,7 @@
   }
   .navbar-fixed-top {
     margin-bottom: $baseLineHeight;
+    
   }
   .navbar-fixed-bottom {
     margin-top: $baseLineHeight;
@@ -32,7 +33,7 @@
   }
   .navbar .container {
     width: auto;
-    padding: 0 35px;
+    padding: 0 15px;
   }
   // Account for brand name
   .navbar .brand {

@@ -44,13 +44,13 @@
 
 .cheat-sheets {
   padding: 30px;
-  margin: 30px 0px;
-  background: 
-    $heroUnitBackground 0 0 repeat;
+  margin: 10px 0px 30px 0px;
+  background: url("shattered-tall.png") 0 0 repeat;
   background-position: top center;
-  background-size: 92%;
   height: 100%;
-  @include border-radius(6px);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; 
   h1 {
     margin-bottom: 0;
     padding-left: 15px;
@@ -161,30 +161,62 @@
 
 .git-map {
   background-color: white;
-  height: 580px;
+  height: 510px;
   margin: 17px 10px 10px 0px;
   @include border-radius(15px);
 }
 
 .git-one {
-  background: url("what_is_git.png") no-repeat 0 -10px;
-  height: 560px;
+  background: #CDCFD0 url("what_is_git.png") no-repeat 0 -10px;
   background-size: 100%;
 }
 
 .git-two {
-  background: url("git_started.png") no-repeat;
-  height: 560px;
-  background-size: 100%;
+  background: #CDCFD0 url("git_started.png") no-repeat;
+  background-size: 95%;
 }
+
+.git-three-repo {
+  background: #fff url("create_a_repo_logo.png") no-repeat;
+  height: 85px;
+  background-size: 55%;
+  background-position: center;
+}
+.git-three-naming {
+  background: #fff url("create_a_repo_naming.png") no-repeat;
+  height: 65px;
+  background-size: 100%;
+  background-position-x: 0px;
+}
+.git-three-description {
+  background: white url("create_a_repo_description.png") no-repeat;
+  height: 85px;
+  background-size: 170%;
+  background-position-x: -8px;
+}
+.git-three-public {
+  background: white url("create_a_repo_public.png") no-repeat;
+  height: 125px;
+  background-size: 105%;
+  background-position-x: -8px;
+}
+.git-three-readme {
+  background: white url("create_repo_readme2.png") no-repeat;
+  height: 355px;
+  background-size: 95%;
+  background-position-x: 0px;
+}
+
 .coding {
   margin: 0px;
   padding-left: 0px;
-  h5.steps {
+  h6.steps {
     line-height: $baseLineHeight * +1;
     margin-top: 0px;
-    font-size: 16px;
     color: $grayLight;
+    font-style: italic;
+    background-color: black;
+    padding-left: 5px;
   }
 }
 .gem {
