@@ -131,6 +131,11 @@
     background-size: 100%;
     background-position: center;
   }
+  .git-three {
+    background: #CDCFD0 url("git_a_repository.png") no-repeat 0px 0px;
+    background-size: 100%;
+    background-color: #CDCFD0;     
+  }
   .git-three-naming {
     background: #fff url("create_a_repo_naming.png") no-repeat;
     height: 70px;
@@ -152,9 +157,15 @@
   }
   .git-three-readme {
     background: white url("create_repo_readme2.png") no-repeat;
-    height: 300px;
-    background-size: 85%;
+    height: 475px;
+    background-size: 100%;
     background-position-x: 0px;
+  }
+  .git-three-create {
+    background: white url("create_a_repo_button.png") no-repeat;
+    height: 60px;
+    background-size: 45%;
+    background-position-x: -8px;
   }
   
   // FORM FIELDS
@@ -240,7 +251,11 @@
   }
   .git-two {
     background: #CDCFD0 url("git_started.png") no-repeat;
-    background-size: 100%;
+    background-size: 100%;                                                          
+  }
+  .git-three {
+    background: #CDCFD0 url("git_a_repository.png ") -15px 0px no-repeat ;
+    background-size: 105%;                                                          
   }
   .git-three-repo {
     background: #CDCFD0 url("create_a_repo_logo.png") no-repeat;
@@ -271,6 +286,12 @@
     height: 183px;
     background-size: 104%;
     background-position-x: 0px;
+  }
+  .git-three-create {
+    background: white url("create_a_repo_button.png") no-repeat;
+    height: 50px;
+    background-size: 65%;
+    background-position-x: -8px;
   }
   .cheat-sheets {
     padding: 5px 30px 30px 30px;        

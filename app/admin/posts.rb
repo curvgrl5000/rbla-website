@@ -1,3 +1,3 @@
-ActiveAdmin.register Post do
+ActiveAdmin.register Blogit::Post do
   
 end
