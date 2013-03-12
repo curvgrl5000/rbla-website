@@ -85,6 +85,13 @@
     color: $grayDark;
     margin: 0 15px 10px 0px;
   }
+  span.strong.em {
+    font-weight: 600;
+    font-style: italic;
+    padding-right: 3px;
+    font-size: 105%;
+    color: $red;
+  }
   span.accent-white {
     color: white;
     font-family: "bello-pro";
@@ -214,12 +221,13 @@
   margin: 0px;
   padding-left: 0px;
   h6.steps {
-    line-height: $baseLineHeight * +1;
+    line-height: $baseLineHeight * +1.15;
     margin-top: 0px;
-    color: $grayLight;
+    color: $lime;
     font-style: italic;
     background-color: black;
     padding-left: 5px;
+    font-size: 115%;
   }
 }
 .gem {
