@@ -18,10 +18,10 @@
           <div id="collapseOne" class="accordion-body collapse">
             <div class="accordion-inner">
              <p>
-                To install <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">Git</a> 
+                To install <span class="strong em"><a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">Git</a></span> 
                 from the Source is generally useful, because you’ll get 
                 the most recent version. Each version of Git tends to include useful UI enhancements. 
-                Getting the latest version is often 
+                <br><br>Getting the latest version is often 
                 the best route if you feel comfortable compiling software from source. It is also the case that many 
                 Linux distributions contain very old packages; so unless you’re on a very up-to-date distro or are 
                 using backports, installing from source may be the best bet.
@@ -67,8 +67,8 @@
           </div>
           <div id="collapseTwo" class="accordion-body collapse">
             <div class="accordion-inner">
-              <p>If you want to <a href="https://github.com/">install Git on Linux</a> via a binary installer, you can generally 
-                do so through the basic package-management tool that comes with your distribution. If you’re on Fedora, you can use yum:
+              <p>If you want to <span class="strong em"><a href="https://github.com/">install Git on Linux</a></span> via a binary installer, 
+                you can generally do so through the basic package-management tool that comes with your distribution. If you’re on Fedora, you can use yum:
               </p>
               <div class="coding">
                  <h6 class="steps">
@@ -96,7 +96,7 @@
           <div id="collapseThree" class="accordion-body collapse">
             <div class="accordion-inner">
               <p>There are two easy ways to install Git on a Mac. The easiest is to use the graphical Git installer, 
-                which you can download from the <a href="">Google Code</a> page.
+                which you can download from the <span class="strong em"><a href="">Google Code</a></span> page.
               </p>
               <div class="coding">
                  <h6 class="steps">
@@ -104,7 +104,7 @@
                  </h6>
                </div>
                <p>The most common way to install Git is via MacPorts
-                  <a href="http://www.macports.org">http://www.macports.org</a>. If you have MacPorts installed, install Git via:
+                  <span class="strong em"><a href="http://www.macports.org">http://www.macports.org</a></span>. If you have MacPorts installed, install Git via:
                </p>
                <div class="coding">
                   <h6 class="steps">
@@ -123,7 +123,7 @@
           </div>
           <div id="collapseFour" class="accordion-body collapse">
             <div class="accordion-inner">
-              <p>Installing Git on Windows is very easy. The msysGit project has one of the easier installation procedures. 
+              <p><span class="strong em">Installing Git</span> on Windows is very easy. The msysGit project has one of the easier installation procedures. 
                 Simply download the installer exe file from the Google Code page, and run it:
               </p>
               <div class="coding">
@@ -132,7 +132,8 @@
                  </h6>
                </div>
                <p>After it’s installed, you have both a command-line version (including an SSH client that will come in handy later) 
-                 and the standard GUI. Note on Windows usage: you should use Git with the provided msysGit shell (Unix style), it allows      
+                 and the standard GUI. <br><br>
+                 <span class="strong em">Note on Windows usage:</span> you should use Git with the provided msysGit shell (Unix style), it allows      
                  to use the complex lines of command given in this book. If you need, for some reason, to use the native Windows shell /  
                  command line console, you have to use double quotes instead of simple quotes (for parameters with spaces in them) and you  
                  must quote the parameters ending with the circumflex accent (^) if they are last on the line, as it is a continuation    
@@ -151,7 +152,7 @@
           </div>
           <div id="collapseSix" class="accordion-body collapse">
             <div class="accordion-inner">
-              <p><a href="http://mxcl.github.com/homebrew/">Homebrew</a>, "the missing package manager for OSX"
+              <p><span class="strong em"><a href="http://mxcl.github.com/homebrew/">Homebrew:</a></span> "the missing package manager for OSX"
               </p>
               <p>
                 Homebrew installs everything you need that Apple didn't, and it's all git and ruby underneath.
@@ -237,7 +238,7 @@
           <li><%= link_to "All About Git", cheat_path %></li>
           <li><%= link_to "How to Install Git", cheatsheet_install_git_path %></li>
           <li><%= link_to "How to Create a Git Repository", cheatsheet_repository_path %></li>
-          <li><%= link_to "How to Clone a Git Repository", cheatsheet_clone_a_repository_path %></li>
+          <li><%= link_to "How to Clone Fetch and Pull", cheatsheet_clone_a_repository_path %></li>
           <li><%= link_to "Create and Merge Git Branches", cheatsheet_merge_a_repository_path %></li>
           <li><%= link_to "How to Rollback a Git Repository", cheatsheet_rollback_a_repository_path %></li>
           <li><%= link_to "Deploying to Heroku", cheatsheet_deploying_to_heroku_path %></li>

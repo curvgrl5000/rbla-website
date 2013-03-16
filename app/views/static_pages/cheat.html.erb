@@ -19,7 +19,7 @@
           <div id="collapseOne" class="accordion-body collapse">
             <div class="accordion-inner">
               <p>
-                <a href="http://git-scm.com/">Git</a> is a distributed open source Version Control System that tracks content such as files and directories.
+                <span class="strong em"><a href="http://git-scm.com/">Git</a></span> is a distributed open source Version Control System that tracks content such as files and directories.
                 Git allows the creation of a history for a collection of files, and stores the file content in BLOBs (binary large objects);
                 which are captured in states that are fully accessible.
               </p>
@@ -38,17 +38,73 @@
             </div>
           </div> <!-- //end collapseOne -->
         </div> <!-- //end accordion-group   -->
+               
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+              What are Repositories?
+            </a>
+          </div>
+          <div id="collapseThree" class="accordion-body collapse">
+            <div class="accordion-inner">
+              <p><span class="strong em">A repository</span> is a central place where data is stored and maintained for safe keeping. A repository can be a place where multiple databases
+                 or files are located for distribution over a network, or a repository can be a location that is directly accessible to the user without 
+                 having to travel across a network.
+              </p>
+              <p>The open source community uses repositories to allow software to be found easier and a safe, trusted place to organize projects
+                that a team can work with. Repositories can be set up locally; on one's computer or remotely; on a server in the cloud, like 
+                Github or Heroku.
+              </p> 
+            </div>
+          </div> <!-- //end collapseThree -->  
+        </div> <!-- //end accordion-group   --> 
         
         <div class="accordion-group">
           <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseFour">
+              What are Local Repositories?
+            </a>
+          </div>
+          <div id="collapseFour" class="accordion-body collapse">
+            <div class="accordion-inner">
+              <p><span class="strong em">Local repositories</span> are the local copy of a project on one's computer. Using Git allows one to clone or fork
+                a repository, e.g. create an exact copy of a repository with a complete history. Owners of repositories can sync changes
+                from their local copy to a remote copy by Pulling and Posting; which creates the basic work flow of software development.
+              </p> 
+            </div>
+          </div>   <!-- //end collapseFour -->  
+        </div> <!-- //end accordion-group   -->  
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseFive">
+              What are Remote Repositories?
+            </a>
+          </div>
+          <div id="collapseFive" class="accordion-body collapse">
+            <div class="accordion-inner">
+              <p>
+                <span class="strong em">Remote repositories</span> are the remote copy of a project located on another computer or host like Github or Heroku. The "source"
+                repository is often distributed by way of a URL; which describes where the repository is located and what protocol ( http, ssh, git, etc.). 
+              </p>
+              <p>
+                The source is known os the Branch Master and with a series of Git commands, a user will periodically update or "Git Pull" to retrieve new updates
+                from the remote repository, then continue working locally and send or "Git Push" new changes or "Commits" to contribute to shared repositories.
+              </p>
+            </div>
+          </div> <!-- //end collapseFive -->
+        </div> <!-- //end accordion-group   -->
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapseTwo">
               What is Github?
             </a>
           </div>
           <div id="collapseTwo" class="accordion-body collapse">
             <div class="accordion-inner">
               <p>
-                <a href="https://github.com/">Github </a>is an open source project that manages and stores revisions of projects. 
+                <span class="strong em"><a href="https://github.com/">Github </a></span>is an open source project that manages and stores revisions of projects. 
                 It's literally a Git repository hosting service, with many of it's own features, such as wikis and basic task management tools 
                 for every project. The flagship functionality is
                 "forking" or copying a repository from one user's account to another; which enables a user to modify a project in a user's own account.
@@ -65,68 +121,13 @@
         
         <div class="accordion-group">
           <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
-              What are Repositories?
-            </a>
-          </div>
-          <div id="collapseThree" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>A repository is a central place where data is stored and maintained for safe keeping. A repository can be a place where multiple databases
-                 or files are located for distribution over a network, or a repository can be a location that is directly accessible to the user without 
-                 having to travel across a network.
-              </p>
-              <p>The open source community uses repositories to allow software to be found easier and a safe, trusted place to organize projects
-                that a team can work with. Repositories can be set up locally; on one's computer or remotely; on a server in the cloud, like 
-                Github or Heroku. 
-              </div>
-            </div> <!-- //end collapseThree -->  
-          </div> <!-- //end accordion-group   --> 
-        
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseFour">
-              What are Local Repositories?
-            </a>
-          </div>
-          <div id="collapseFour" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>Local repositories are the local copy of a project on one's computer. Using Git allows one to clone or fork
-                a repository, e.g. create an exact copy of a repository with a complete history. Owners of repositories can sync changes
-                from their local copy to a remote copy by Pulling and Posting; which creates the basic work flow of software development.
-              </p> 
-            </div>
-          </div>   <!-- //end collapseFour -->  
-        </div> <!-- //end accordion-group   -->  
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseFive">
-              What are Remote Repositories?
-            </a>
-          </div>
-          <div id="collapseFive" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>
-              Remote repositories are the remote copy of a project located on another computer or host like Github or Heroku. The "source"
-              repository is often distributed by way of a URL; which describes where the repository is located and what protocol ( http, ssh, git, etc.). 
-              </p>
-              <p>
-              The source is known os the Branch Master and with a series of Git commands, a user will periodically update or "Git Pull" to retrieve new updates
-              from the remote repository, then continue working locally and send or "Git Push" new changes or "Commits" to contribute to shared repositories.
-              </p>
-            </div>
-          </div> <!-- //end collapseFive -->
-        </div> <!-- //end accordion-group   --> 
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseSix">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapseSix">
               What is Heroku?
             </a>
           </div>
           <div id="collapseSix" class="accordion-body collapse">
             <div class="accordion-inner">
-              <p><a href="http://www.heroku.com/">Heroku</a> is a cloud application platform and a brand new way of building and deploying web apps due to it's 
+              <p><span class="strong em"><a href="http://www.heroku.com/">Heroku</a></span> is a cloud application platform and a brand new way of building and deploying web apps due to it's 
                 ease of use. Programmers can spend all of their time in development vs managing servers - a huge win by most accounts.
               </p>
               <p>
@@ -136,7 +137,7 @@
             </div> <!-- // end accordion-inner  -->
           </div> <!-- //end collapseSix   -->
         </div> <!-- //end accordion-group  -->
-      </div> <!-- //end accordion2 -->
+      </div> <!-- //end accordion -->
       
       <div class="btn-group dropup">
         <button class="btn">Next Cheatsheet</button>
@@ -148,7 +149,7 @@
           <li><%= link_to "All About Git", cheat_path %></li>
           <li><%= link_to "How to Install Git", cheatsheet_install_git_path %></li>
           <li><%= link_to "How to Create a Git Repository", cheatsheet_repository_path %></li>
-          <li><%= link_to "How to Clone a Git Repository", cheatsheet_clone_a_repository_path %></li>
+          <li><%= link_to "How to Clone Fetch and Pull", cheatsheet_clone_a_repository_path %></li>
           <li><%= link_to "Create and Merge Git Branches", cheatsheet_merge_a_repository_path %></li>
           <li><%= link_to "How to Rollback a Git Repository", cheatsheet_rollback_a_repository_path %></li>
           <li><%= link_to "Deploying to Heroku", cheatsheet_deploying_to_heroku_path %></li>

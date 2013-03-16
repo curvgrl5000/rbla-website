@@ -19,7 +19,7 @@
           <div id="collapseOne" class="accordion-body collapse">
             <div class="accordion-inner">
               <p class = italics>
-                Many of us are used to using GUIS ( Graphical User Interfaces ), but learning how to use the 
+                <span class="strong em">Many of us are used to using GUIS</span> (Graphical User Interfaces), but learning how to use the 
                 CLI ( Command Line Interface ), is essential for programming.  Common names include the Shell, CLI,
                  Terminal and Console. But exactly what is the Command Line? At it’s core, it’s simply the place 
                  where you type commands to the computer. 
@@ -31,11 +31,11 @@
                 A command-line interface is one type of text-based user interface.”
               </p>  
               <p>
-                On a Mac, launch the Terminal from the utilities folder inside of your main Applications folder.
+                <span class="strong em">On a Mac,</span> launch the Terminal from the utilities folder inside of your main Applications folder.
                 Apple Mac OS X[4] and many Linux distributions have the Bash implementation of the Unix shell.
               </p>
               <p>
-                On MS Windows users use the Command Prompt or the PowerShell. Android uses a Unix shell derived 
+                <span class="strong em">On MS Windows</span> users use the Command Prompt or the PowerShell. Android uses a Unix shell derived 
                 from Ash with commands from the separate toolbox.
               </p>
               <p>We will be concerning ourselves with the Mac side of things.</p>
@@ -52,14 +52,15 @@
           <div id="collapseTwo" class="accordion-body collapse">
             <div class="accordion-inner">
               <p>
-                Most commands have three parts and start with the $ symbol.<br>
-                The Utility or Command Name / The Flags or Options / The Arguments <br>
+                <span class="strong em">Most commands have three parts</span> and start with the $ symbol.<br>
+                The Utility or Command Name / The Flags or Options / The Argument(s) <br>
               </p>
               <div class="coding">
                 <h6 class="steps">$ ls -1 ~/Desktop</h6>
               </div>
-              <p><span class="strong em">$</span> is the common symbol which indicates that you’re typing a 
-                command into the command line, you don’t have to type this, it’s inherited with the prompt.
+              <p>Okay, let's break each part down:</p>
+              <p><span class="strong em">$</span> is the common symbol for SELECT, which indicates that you’re ready to type 
+                commands into the command line. You don’t have to type this, it’s inherited with the prompt.
               </p>
               <p><span class="strong em">ls</span> is THE UTILITY. Generally known as “commands” as they 
                 are indicating what you want the computer to do. In this case “ls” is the command to list the contents 
@@ -79,7 +80,7 @@
               <div class="coding">
                 <h6 class="steps">$ man command</h6>
               </div>
-              <p>Man means manual, fyi.</p>  
+              <p>FYI: Man means manual.</p>  
             </div>
           </div> <!-- //end collapseTwo -->   
         </div> <!-- //end accordion-group   -->       
@@ -93,8 +94,8 @@
           <div id="collapseThree" class="accordion-body collapse">
             <div class="accordion-inner">
               <p>
-                Remember guys, you konw you're ready to go, when you see the '$' which means you're in your
-                terminal and ready to code. <br>
+                <span class="strong em">Remember guys,</span> you're ready to go when you see the '$' in the terminal. You're now
+                ready to code. <br>
               </p>
               <p><span class="strong em">ls</span> Lists what is in the current directory.</p>
               <p><span class="strong em">pwd</span> Print Working Directory, gives you the full path of where you are.</p>
@@ -113,7 +114,7 @@
                 a browser window and type: localhost:3000 and bam you've got a local version of your work.</p>
               <p><span class="strong em">exit</span> Exits a terminal window.</p>
               <p><span class="strong em">man -k "topic"</span>Manual Lookup Topic, looks up and displays what you're 
-                looking for in quotes
+                looking for in quotes.
               </p>
               </div>
             </div> <!-- //end collapseThree -->  
@@ -127,13 +128,14 @@
           <div id="collapseFive" class="accordion-body collapse">
             <div class="accordion-inner">
               <p>
-                If you ever get stuck, just go online to any one of these resources. Don't be afraid to ask for help!
+                <span class="strong em">If you ever get stuck,</span> go online to any one of these resources. Don't be afraid to ask for help!
               </p>
               <p>
-                <a href="0http://ss64.com/">ss64.com</a> is a great for resource for everyone.<br>
-                <a href="http://en.wikipedia.org/wiki/List_of_Unix_utilities#List/">Wiki List of Unix commands</a> 
+                <span class="strong em"><a href="http://stackoverflow.com/">Stack Overflow</a></span> is a great place to post a question.<br>
+                <span class="strong em"><a href="http://en.wikipedia.org/wiki/List_of_Unix_utilities#List/">Wiki List of Unix Commands</a></span> 
                 is a great place to read about the history and the use of the command line.<br>
-                <a href="http://ss64.com/osx/">Mac user list</a> of Unix Commands <br>
+                <span class="strong em"><a href="http://ss64.com/osx/">Mac User List</a></span> of Unix Commands <br>
+                <span class="strong em"><a href="0http://ss64.com/">ss64.com</a></span> is another great for resource for everyone.<br>
               </p>
             </div>
           </div> <!-- //end collapseFive -->
@@ -150,7 +152,7 @@
           <li><%= link_to "All About Git", cheat_path %></li>
           <li><%= link_to "How to Install Git", cheatsheet_install_git_path %></li>
           <li><%= link_to "How to Create a Git Repository", cheatsheet_repository_path %></li>
-          <li><%= link_to "How to Clone a Git Repository", cheatsheet_clone_a_repository_path %></li>
+          <li><%= link_to "How to Clone Fetch and Pull", cheatsheet_clone_a_repository_path %></li>
           <li><%= link_to "Create and Merge Git Branches", cheatsheet_merge_a_repository_path %></li>
           <li><%= link_to "How to Rollback a Git Repository", cheatsheet_rollback_a_repository_path %></li>
           <li><%= link_to "Deploying to Heroku", cheatsheet_deploying_to_heroku_path %></li>
