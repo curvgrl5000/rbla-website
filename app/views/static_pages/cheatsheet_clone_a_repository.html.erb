@@ -9,85 +9,60 @@
       <h5>CHEATSHEET:</h5>
       <h2>HOW TO CLONE, FETCH, and PULL</h2>
       <div class="accordion" id="accordion2">
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data=parent="#accordion2" href="#collapseOne">
-              Git Clone  
-            </a> 
-          </div> <!-- //end accordion-heading    -->
-          
-          <div id="collapseOne" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>
-                <span class="strong em">In the command line 'git clone'</span> will copy a repo into a newly created directory,
-                and creates remote-tracking branches for each branch in the cloned repository.
-              </p>
-              <p>
-                This command additionally creates a remote called 'origin' for the repo cloned from, 
-                and sets up a local branch based on the remote's active branch (usually master). It also
-                creates remote-tracking branches for all the branches in the repository.
-              </p> 
-              <div class="coding">
-                <h6 class="steps">
-                  $ cd /newfolder<br>
-                  $ git clone git@github.com:username/Project-Name.git<br>
-                  $ git branch<br>
-                    * master<br>
-                  remoteBranch<br>
-                </h6>
-              </div>
-            </div> <!-- end accordion-inner   -->
-          </div> <!-- //end collapseOne -->
-        </div> <!-- //end accordion-group   -->
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-              Git Fetch
-            </a>
+        <%= accordion_block "Git Clone", "git_clone", "accordian2" do %>
+          <p>
+            <span class="strong em">In the command line 'git clone'</span> will copy a repo into a newly created directory,
+            and creates remote-tracking branches for each branch in the cloned repository.
+          </p>
+          <p>
+            This command additionally creates a remote called 'origin' for the repo cloned from, 
+            and sets up a local branch based on the remote's active branch (usually master). It also
+            creates remote-tracking branches for all the branches in the repository.
+          </p> 
+          <div class="coding">
+            <h6 class="steps">
+              $ cd /newfolder<br>
+              $ git clone git@github.com:username/Project-Name.git<br>
+              $ git branch<br>
+                * master<br>
+              remoteBranch<br>
+            </h6>
           </div>
-          <div id="collapseTwo" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p> <span class="strong em">A current local repo</span> with a remote set up for the current project, 
-                you can git fetch<REMOTENAME>. Git fetch is similar to pull, but it will not do 
-                any merging.
-              </p>
-              <p>  
-                Fetch does not make any changes to local branches, so you will need
-                to merge a remote branch with a paired local branch to incorporate new fetch changes.    
-              </p> 
-            </div>
-            <div class="coding">
-              <h6 class="steps">
-                $ git fetch<br>
-              </h6>
-            </div>
-          </div> <!-- //end collapseTwo -->   
-        </div> <!-- //end accordion-group   -->       
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
-              Git Pull
-            </a>
+        <% end %>
+
+        <%= accordion_block "Git Fetch", "git_fetch", "accordian2" do %>
+          <p>
+            <span class="strong em">A current local repo</span> with a remote set up for the current project, 
+            you can git fetch<REMOTENAME>. Git fetch is similar to pull, but it will not do any merging.
+          </p>
+          <p>  
+            Fetch does not make any changes to local branches, so you will need
+            to merge a remote branch with a paired local branch to incorporate new fetch changes.    
+          </p> 
+          <div class="coding">
+            <h6 class="steps">
+              $ git fetch<br>
+            </h6>
           </div>
-          <div id="collapseThree" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p><span class="strong em">Git Pull</span> will pull down from a remote and instantly merge into the branch you're
-                in when you make the request. Pull is a high-level request, that runs 'fetch' and
-                'merge' by default.
-              </p>
-              <p>Similar to git fetch, you can use git <REMOTENAME> <BRANCHNAME> to fetch a specific
-                branch and merge it into your current local branch. For one-time pull from other 
-                user's repos, you can use a URL in place of a remote name. 
-              <div class="coding">
-                <h6 class="steps">
-                  $ git pull origin master<br>
-                </h6>
-              </div>
-            </div> <!-- end //accordion-inner   -->
-          </div> <!-- //end collapseThree -->  
-        </div> <!-- //end accordion-group   --> 
+        <% end %>
+        
+        <%= accordion_block "Git Pull", "git_pull", "accordian2" do %>
+          <p>
+            <span class="strong em">Git Pull</span> will pull down from a remote and instantly merge into the branch you're
+            in when you make the request. Pull is a high-level request, that runs 'fetch' and
+            'merge' by default.
+          </p>
+          <p>
+            Similar to git fetch, you can use git <REMOTENAME> <BRANCHNAME> to fetch a specific
+            branch and merge it into your current local branch. For one-time pull from other 
+            user's repos, you can use a URL in place of a remote name.
+          </p> 
+          <div class="coding">
+            <h6 class="steps">
+              $ git pull origin master<br>
+            </h6>
+          </div>
+        <% end %>
       </div> <!-- //end accordion2 -->
       
       <div class="btn-group dropup">

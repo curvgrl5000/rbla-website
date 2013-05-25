@@ -9,261 +9,190 @@
       <h5>CHEATSHEET:</h5>
       <h2>CREATE A GIT REPOSITORY</h2>
       <div class="accordion" id="accordion2">
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data=parent="#accordion2" href="#collapseOne">
-              Initializing a Repo from an Existing Directory
-            </a> 
-          </div> <!-- //end accordion-heading    -->
-          <div id="collapseOne" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>
-                If you're starting from an existing project in Git, you need to go to that project's directory in the terminal.
-                Go ahead and navigate into that directory with 'cd /name of directory'. Then type the following:
-              </p>
-              <div class="coding">
-                <h6 class="steps">
-                  $ git init <br>
-                </h6>
-              </div>
-              <p>
-                This creates a subdirectory named '.git' that contains all the needed files for a Git repo. So far you've installed Git, and
-                now you have to begin tracking your project. Go ahead and type the following: 
-              </p>
-              <div class="coding">
-                <h6 class="steps">
-                  $ git add .<br>
-                  $ git commit -m 'your first commit is typed here, this is sample copy'
-                </h6>
-              </div>
-              <p>
-                Now it's time to track changes to your project. As you edit your files,
-                Git sees them as modified since your last commit. Go ahead and make a change to a file, or add a file in
-                the project, and type this:
-              </p>
-              <div class="coding">
-                <h6 class="steps">
-                  $ git status<br>
-                </h6>
-              </div>
-              <p>
-                At this point, you should see that Git has noticed a change in your directory. Untracked changes will remain that way
-                until you commit them. When you 'git commit' them, you are staging changes, then tracking them. These two states are the key
-                concepts that manage your style of development. A common life cycle that repeats itself often.
-              </p>
-              <p>
-                The best practice is to 'git commit' all changes with a clear description, annotating them for future observation. So when 
-                you or others revisit a change you've committed, you understand exactly what you've done.<p>
-                <p>If you haven't made any changes, you'll see the following:</p>
-                <div class="coding">
-                  <h6 class="steps">
-                    $ git status<br>
-                    nothing to commit (working directory clean)
-                  </h6>
-                </div>
-                <p>This means nothing has changed and there are no new files in your working directory. Now go ahead and add a change or 
-                  file to your directory and type 'git status'.</p>
-                <div class="coding">
-                  <h6 class="steps">
-                    $ git status<br>
-                      # On branch master
-                      # Changes not staged for commit:
-                        (use "git add <file>..." to updated what will be committed)
-                        (use "git checkout -- <file>..." to discard changes in working directory)
-                          modified:  /name_of_file_changed.erb
-                      no changes added to commit (use "git add" and/or "git commit -a")
-                  </h6>
-                </div>
-                <p>You should see the name of the file you've added. Go ahead and stage the file: git commit -m or git add  . then
-                  add your description of the change in quotes: "I added a file to test git."
-                  Congratulations, you're now tracking files. For more info: go to 
-                  <span class="strong em"><a href="http://git-scm.com/">Pro Git</a></span>a great resource for all about Git.
-                </p>  
-            </div>
-          </div> <!-- //end collapseOne -->
-        </div> <!-- //end accordion-group   -->
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-              1. Creating a 'Repo' on Github 
-            </a>
+        <%= accordion_block "Initializing a Repo from an Existing Directory", "Initializing_a_repo_from_an_existing_directory", "accordian2" do %>
+          <p>
+            If you're starting from an existing project in Git, you need to go to that project's directory in the terminal.
+            Go ahead and navigate into that directory with 'cd /name of directory'. Then type the following:
+          </p>
+          <div class="coding">
+            <h6 class="steps">
+              $ git init <br>
+            </h6>
           </div>
-          <div id="collapseTwo" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>When you create a project on Github, you will need to clone this repo to your local repository.
-                 See the next Cheatsheet: <span class="strong em"><%= link_to "How to Clone a Git Repository", cheatsheet_clone_a_repository_path %></span>
-                 for info on how do this, after you've gone through all the following steps.
-              </p>
-              <p>
-                <span class="strong em"><a href="https://github.com">Github</a></span> is a place to put your project, you'll need a Github account
-                to do this. Once you have an account set up, you'll then create a repository for each project.
-              </p>
-              <p>
-                Anyhow, first create a new repository in your Github account. It's the first graphic just right of your name
-                in the top upper-right of your browser window. 
-              </p>
-              <div class="git-three-repo"></div>
-            </div>
-          </div> <!-- //end collapseTwo -->   
-        </div> <!-- //end accordion-group   -->
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-              2. Next, Name your 'Repo'
-            </a>
+          <p>
+            This creates a subdirectory named '.git' that contains all the needed files for a Git repo. So far you've installed Git, and
+            now you have to begin tracking your project. Go ahead and type the following: 
+          </p>
+          <div class="coding">
+            <h6 class="steps">
+              $ git add .<br>
+              $ git commit -m 'your first commit is typed here, this is sample copy'
+            </h6>
           </div>
-          <div id="collapseThree" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>
-                Name your repository with a simple, easy to understand name. It will save you hours of guessing.
-              </p>
-              <div class="git-three-naming"></div>
-            </div>
-          </div> <!-- //end collapseTwo -->   
-        </div> <!-- //end accordion-group   -->       
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseFour">
-              3. Okay, Now Describe your Project
-            </a>
+          <p>
+            Now it's time to track changes to your project. As you edit your files,
+            Git sees them as modified since your last commit. Go ahead and make a change to a file, or add a file in
+            the project, and type this:
+          </p>
+          <div class="coding">
+            <h6 class="steps">
+              $ git status<br>
+            </h6>
           </div>
-          <div id="collapseFour" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>Describing your project is optional but when working with others it's quite useful.</p>
-              <div class="git-three-description"></div>
-              </div>
-            </div> <!-- //end collapseThree -->  
-          </div> <!-- //end accordion-group   --> 
-        
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseFive">
-              4. Make your Repo Public or Private 
-            </a>
+          <p>
+            At this point, you should see that Git has noticed a change in your directory. Untracked changes will remain that way
+            until you commit them. When you 'git commit' them, you are staging changes, then tracking them. These two states are the key
+            concepts that manage your style of development. A common life cycle that repeats itself often.
+          </p>
+          <p>
+            The best practice is to 'git commit' all changes with a clear description, annotating them for future observation. So when 
+            you or others revisit a change you've committed, you understand exactly what you've done.
+          <p>
+          <p>If you haven't made any changes, you'll see the following:</p>
+          <div class="coding">
+            <h6 class="steps">
+              $ git status<br>
+              nothing to commit (working directory clean)
+            </h6>
           </div>
-          <div id="collapseFive" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>Simply check a radio button to activate the settings. Making projects Public means everyone 
-                can see them, while making projects Private will require an invitation to others to see and join your 
-                project - useful when you're working with clients.
-              </p>
-              <div class="git-three-public"></div>
-            </div>
-          </div>   <!-- //end collapseFour -->  
-        </div> <!-- //end accordion-group   -->
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseSix">
-              5. Initializing the Repo with a README file 
-            </a>
+          <p>
+            This means nothing has changed and there are no new files in your working directory. Now go ahead and add a change or 
+            file to your directory and type 'git status'.
+          </p>
+          <div class="coding">
+            <h6 class="steps">
+              $ git status<br>
+              # On branch master
+              # Changes not staged for commit:
+              (use "git add <file>..." to updated what will be committed)
+              (use "git checkout -- <file>..." to discard changes in working directory)
+              modified:  /name_of_file_changed.erb
+              no changes added to commit (use "git add" and/or "git commit -a")
+            </h6>
           </div>
-          <div id="collapseSix" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>If you check the button "Initialize this repository with a README", this will allow you to 
-                clone the repo from the command line, or from the repository's front page immediately. 
-              </p>
-              <div class="git-three-initiate"></div><br>
-              <p>
-                From the repo's front page, choose the "Clone in Mac" button and it will launch the Github App, where you'll be able to manage 
-                all repos through the Gitbhub GUI. If you don't have the Github app, you'll be prompted to download it.
-              </p>
-            </div>
-          </div>   <!-- //end collapseFour -->  
-        </div> <!-- //end accordion-group   -->  
+          <p>
+            You should see the name of the file you've added. Go ahead and stage the file: git commit -m or git add  . then
+            add your description of the change in quotes: "I added a file to test git."
+            Congratulations, you're now tracking files. For more info: go to 
+            <span class="strong em"><a href="http://git-scm.com/">Pro Git</a></span>a great resource for all about Git.
+          </p>  
+        <% end %>
         
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseSeven">
-              6. Final Step: Create your Repository
-            </a>
-          </div>
-          <div id="collapseSeven" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>Then click the button and you're all done.</p>
-                <div class="git-three-create"></div>
-              </div> <!-- // end accordion-inner  -->
-            </div> <!-- //end collapseSix   -->
-          </div> <!-- //end accordion-group  -->
+        <%= accordion_block "1. Creating a 'Repo' on Github", "1_creating_a_repo_on_github", "accordian2" do %>
+          <p>
+            When you create a project on Github, you will need to clone this repo to your local repository.
+            See the next Cheatsheet: <span class="strong em"><%= link_to "How to Clone a Git Repository", cheatsheet_clone_a_repository_path %></span>
+            for info on how do this, after you've gone through all the following steps.
+          </p>
+          <p>
+            <span class="strong em"><a href="https://github.com">Github</a></span> is a place to put your project, you'll need a Github account
+            to do this. Once you have an account set up, you'll then create a repository for each project.
+          </p>
+          <p>
+            Anyhow, first create a new repository in your Github account. It's the first graphic just right of your name
+            in the top upper-right of your browser window. 
+          </p>
+          <div class="git-three-repo"></div>
+        <% end %>
+                      
+        <%= accordion_block "2. Next, Name your 'Repo'", "2_next_name_your_repo", "accordian2" do %>
+          <p>
+            Name your repository with a simple, easy to understand name. It will save you hours of guessing.
+          </p>
+          <div class="git-three-naming"></div>
+        <% end %>
         
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseEight">
-              Another Way to Create your Repo - Step One
-            </a>
-          </div>
-          <div id="collapseEight" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>You can start at the command line and create your local repository first.</p>
-               <p>
-                 Create your directory, install git and initialize your repo with a README file, where you describe your project, 
-                add documentation and provide contact information. All extremely useful from the get go.
-              </p>
-              <p>  
-                Okay so here's what's happening: mkdir (make the directory)~(the tilde is your home directory) / 
-                Project-Folder, then cd / Project-Name, the git init stuff, and finally touch; the utility that creates the README file.
-              </p>
-              <div class="git-three-readme"></div>
-              <p> Now open the new README file from a text editor, and add a greeting "Yay Railsbridge!"
-                  Save it and close the file. Now commit your README file:
-              </p>
-              <div class="coding">
-                <h6 class="steps">
-                  $ git add README<br>
-                    # Stages your README file, adding it to the list of files to be committed<br>
-                  $ git commit -m 'first commit'<br>
-                    # Commits your files, adding the message "first commit"
-                </h6>
-              </div>
-              <p>  
-                Now we have to push the commit, remember it's only local. Go to the next step.
-              </p>
-            </div>
-          </div> <!-- //end collapseFive -->
-        </div> <!-- //end accordion-group   -->
+        <%= accordion_block "3. Okay, Now Describe your Project", "3_okay_now-describe_your_project", "accordian2" do %>
+          <p>Describing your project is optional but when working with others it's quite useful.</p>
+          <div class="git-three-description"></div>
+        <% end %>
+                      
+        <%= accordion_block "4. Make your Repo Public or Private", "4_make_your_repo_public_or_private", "accordian2" do %>
+          <p>
+            Simply check a radio button to activate the settings. Making projects Public means everyone 
+            can see them, while making projects Private will require an invitation to others to see and join your 
+            project - useful when you're working with clients.
+          </p>
+          <div class="git-three-public"></div>
+        <% end %>
         
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseNine">
-              Another Way to Create your Repo - Step Two
-            </a>
+        <%= accordion_block "5. Initializing the Repo with a README file", "5_initializing_the_repo_with_a_readme_file", "accordian2" do %>
+          <p>
+            If you check the button "Initialize this repository with a README", this will allow you to 
+            clone the repo from the command line, or from the repository's front page immediately. 
+          </p>
+          <div class="git-three-initiate"></div><br>
+          <p>
+            From the repo's front page, choose the "Clone in Mac" button and it will launch the Github App, where you'll be able to manage 
+            all repos through the Gitbhub GUI. If you don't have the Github app, you'll be prompted to download it.
+          </p>
+        <% end %>
+        
+        <%= accordion_block "6. Final Step: Create your Repository", "6_final_step_create_your_repository", "accordian2" do %>
+          <p>Then click the button and you're all done.</p>
+          <div class="git-three-create"></div>
+        <% end %>
+        
+        <%= accordion_block "Another Way to Create your Repo - Step One", "another_way_to_create_your_repo_step_one", "accordian2" do %>
+          <p>You can start at the command line and create your local repository first.</p>
+          <p>
+            Create your directory, install git and initialize your repo with a README file, where you describe your project, 
+            add documentation and provide contact information. All extremely useful from the get go.
+          </p>
+          <p>  
+            Okay so here's what's happening: mkdir (make the directory)~(the tilde is your home directory) / 
+            Project-Folder, then cd / Project-Name, the git init stuff, and finally touch; the utility that creates the README file.
+          </p>
+          <div class="git-three-readme"></div>
+          <p> 
+            Now open the new README file from a text editor, and add a greeting "Yay Railsbridge!"
+            Save it and close the file. Now commit your README file:
+          </p>
+          <div class="coding">
+            <h6 class="steps">
+              $ git add README<br>
+              # Stages your README file, adding it to the list of files to be committed<br>
+              $ git commit -m 'first commit'<br>
+              # Commits your files, adding the message "first commit"
+            </h6>
           </div>
-          <div id="collapseNine" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <p>Everything you've done so far has been local, which means nothing is on Github yet. Have your username handy, which
-                is basicly the name of your account for this next step.</p>
-               <p>
-                 To connect your local repo to your GitHub account, you'll need to set up a remote for your repo and then
-                 push your commits to it:
-              </p>
-              <div class="coding">
-                <h6 class="steps">
-                  $ git remote add origin: https://github.com/username/Name-of-App.git<br>
-                    # Creates a remote named "origin" pointing at your GitHub repository.<br>
-                  $ git push origin master<br>
-                    # Sends your commits in the "master" branch to Github
-                </h6>
-              </div>
-              <p>  
-                Go back to your repository on Github and you'll see your README file has been added. From this point forward, 
-                to push commits to your Gibhub repo, follow this recipe (only when working solo):</p>
-                <div class="coding">
-                  <h6 class="steps">
-                  $ git status <br>
-                    # Do this at the beginning of each session to make sure you've committed all changes <br>
-                  $ git commit -m "the change description" <br>
-                    # If there is a change, then commit and stage it, if there's no change then keep working and when your ready
-                    git commit the new change <br>
-                  $ git push origin master <br>
-                    # Finally push any new commits to the remote repo <br>
-                  </h6>
-                </div>
-            </div>
-          </div> <!-- //end collapseFive -->
-        </div> <!-- //end accordion-group   --> 
+          <p>  
+            Now we have to push the commit, remember it's only local. Go to the next step.
+          </p>
+        <% end %>
+        
+        <%= accordion_block "Another Way to Create your Repo - Step Two", "another_way_to_create_your_repo_step_two", "accordian2" do %>
+          <p>
+            Everything you've done so far has been local, which means nothing is on Github yet. Have your username handy, which
+            is basicly the name of your account for this next step.</p>
+          <p>
+            To connect your local repo to your GitHub account, you'll need to set up a remote for your repo and then
+            push your commits to it:
+          </p>
+          <div class="coding">
+            <h6 class="steps">
+              $ git remote add origin: https://github.com/username/Name-of-App.git<br>
+                # Creates a remote named "origin" pointing at your GitHub repository.<br>
+              $ git push origin master<br>
+                # Sends your commits in the "master" branch to Github
+            </h6>
+          </div>
+          <p>  
+            Go back to your repository on Github and you'll see your README file has been added. From this point forward, 
+            to push commits to your Gibhub repo, follow this recipe (only when working solo):
+          </p>
+          <div class="coding">
+            <h6 class="steps">
+              $ git status <br>
+                # Do this at the beginning of each session to make sure you've committed all changes <br>
+              $ git commit -m "the change description" <br>
+                # If there is a change, then commit and stage it, if there's no change then keep working and when your ready
+                git commit the new change <br>
+              $ git push origin master <br>
+                # Finally push any new commits to the remote repo <br>
+            </h6>
+          </div>
+        <% end %>
       </div> <!-- //end accordion2 -->
       
       <div class="btn-group dropup">
